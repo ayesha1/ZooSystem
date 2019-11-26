@@ -1,18 +1,20 @@
 
+import java.util.LinkedList;
+import java.util.ListIterator;
+
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.scene.layout.GridPane;
-import javafx.geometry.HPos;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 
 public class CheckoutPage extends Application {
+	LinkedList<Visitor> listOfVisitors = new LinkedList<Visitor>();
+	ListIterator<Visitor> iterator = listOfVisitors.listIterator();
 
 	public static void main(String[] args) {
 		launch(args);
