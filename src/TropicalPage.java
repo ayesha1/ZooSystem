@@ -35,25 +35,45 @@ public class TropicalPage extends Application {
 		monkeyView.setFitWidth(200);
 		monkeyView.setFitHeight(200);
 		
-		Image savannahImage = new Image("/images/SavannahView.png");
-		ImageView savannahView = new ImageView(savannahImage);
-		savannahView.setFitWidth(200);
-		savannahView.setFitHeight(200);
+		Button button = new Button();
+		button.setText("Monkey");
+		button.setMaxHeight(200);
+		button.setStyle("-fx-background-color: \n" + 
+				"        #090a0c,\n" + 
+				"        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),\n" + 
+				"        linear-gradient(#20262b, #191d22),\n" + 
+				"        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));\n" + 
+				"    -fx-background-radius: 5,4,3,5;\n" + 
+				"    -fx-background-insets: 0,1,2,0;\n" + 
+				"    -fx-text-fill: white;\n" + 
+				"    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );\n" + 
+				"    -fx-font-family: \"Arial\";\n" + 
+				"    -fx-text-fill: linear-gradient(white, #d0d0d0);\n" + 
+				"    -fx-font-size: 12px;\n" + 
+				"    -fx-padding: 10 20 10 20;");
+		button.setMaxHeight(20);
+		button.setOnAction(e -> {
+			MonkeyPage login = new MonkeyPage();
+			try {
+				login.start(primaryStage);
+			} catch (Exception e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+		});
+		
 
-		Image dessertImage = new Image("/images/DesertView.png");
-		ImageView dessertView = new ImageView(dessertImage);
-		dessertView.setFitWidth(200);
-		dessertView.setFitHeight(200);
 		
-		Image articImage = new Image("/images/ArticView.png");
-		ImageView articView = new ImageView(articImage);
-		articView.setFitWidth(200);
-		articView.setFitHeight(200);
+		Image koalaImage = new Image("/images/koala.png");
+		ImageView koalaView = new ImageView(koalaImage);
+		koalaView.setFitWidth(200);
+		koalaView.setFitHeight(200);
+
+		Image elephantImage = new Image("/images/elephant.png");
+		ImageView elephantView = new ImageView(elephantImage);
+		elephantView.setFitWidth(200);
+		elephantView.setFitHeight(200);
 		
-		Image aquaticImage = new Image("/images/AquaticView.png");
-		ImageView aquaticView = new ImageView(aquaticImage);
-		aquaticView.setFitWidth(200);
-		aquaticView.setFitHeight(200);
 
 		GridPane gridPane = new GridPane();
 		gridPane.setAlignment(Pos.CENTER);
@@ -61,12 +81,11 @@ public class TropicalPage extends Application {
 		gridPane.add(text1, 1, 0);
 		gridPane.add(tropicalView, 0, 1);
 		gridPane.add(monkeyView, 1, 1);
-		gridPane.add(savannahView, 2, 1);
+		gridPane.add(button, 1, 2);
 
-		gridPane.add(dessertView, 0, 2);
-		gridPane.add(articView, 1, 2);
-		gridPane.add(aquaticView, 2, 2);
+		gridPane.add(koalaView, 2, 1);
 
+		gridPane.add(elephantView, 0, 2);
 
 		gridPane.setHgap(20);
 		gridPane.setVgap(20);

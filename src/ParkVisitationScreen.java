@@ -59,7 +59,7 @@ public class ParkVisitationScreen extends Application {
 		aquaticView.setFitHeight(200);
 
 		button = new Button();
-		button.setText("Owner");
+		button.setText("Tropical");
 		button.setMaxHeight(200);
 		button.setStyle("-fx-background-color: \n" + 
 				"        #090a0c,\n" + 
@@ -74,9 +74,19 @@ public class ParkVisitationScreen extends Application {
 				"    -fx-text-fill: linear-gradient(white, #d0d0d0);\n" + 
 				"    -fx-font-size: 12px;\n" + 
 				"    -fx-padding: 10 20 10 20;");
+		button.setOnAction(e -> {
+			TropicalPage login = new TropicalPage();
+			try {
+				login.start(primaryStage);
+			} catch (Exception e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+		});
+		
 		
 		button1 = new Button();
-		button1.setText("Visitor");
+		button1.setText("Forest");
 		button1.setStyle("-fx-background-color: \n" + 
 				"        #090a0c,\n" + 
 				"        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),\n" + 
@@ -103,7 +113,7 @@ public class ParkVisitationScreen extends Application {
 
 
 		button2 = new Button();
-		button2.setText("Employees");
+		button2.setText("Savannah");
 		button2.setStyle("-fx-background-color: \n" + 
 				"        #090a0c,\n" + 
 				"        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),\n" + 
@@ -135,9 +145,13 @@ public class ParkVisitationScreen extends Application {
 		gridPane.add(forestView, 1, 1);
 		gridPane.add(savannahView, 2, 1);
 
-		gridPane.add(dessertView, 0, 2);
-		gridPane.add(articView, 1, 2);
-		gridPane.add(aquaticView, 2, 2);
+		gridPane.add(button, 0, 2);
+		gridPane.add(button1, 1, 2);
+		gridPane.add(button2, 2, 2);
+
+		gridPane.add(dessertView, 0, 3);
+		gridPane.add(aquaticView, 1, 3);
+		gridPane.add(articView, 2, 3);
 
 
 		gridPane.setHgap(20);
