@@ -10,38 +10,38 @@ public class Dolphin extends Animal {
 		// TODO Auto-generated constructor stub
 	}
 	
-	@Override
-	public String feed() {
+	
+	public static String feed() {
 		return "Employee feeds Dolphin with herring fishes" ; 
 	}
 
-	@Override
-	public String clean() {
+	
+	public static String clean() {
 		return "Employee cleans water for Dolphin";
 	}
 
-	@Override
-	public String play() {
+	
+	public static String play() {
 		return "Visitors play hit the ball with Dolphin" ;
 	}
 
-	@Override
-	public String feedSnack() {
+	
+	public static String feedSnack() {
 		return "Visitors feeds dolphin some fishes";
 	}
 
-	@Override
-	public String talk() {
+	
+	public static String talk() {
 		return "Dolphin says EIIIIIIIHHHH";
 	}
 
-	@Override
-	public String move() {
+	
+	public static String move() {
 		return "Dolphin swims in the water and moves up in the water";
 	}
 
-	@Override
-	public String eat() {
+	
+	public static String eat() {
 		return "Dolphin eats herring fishes and cod" ;
 	}
 }

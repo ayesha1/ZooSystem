@@ -12,44 +12,44 @@ public class Panda extends Animal {
 	
 	
 	
-	@Override
-	public String feed() {
+	
+	public static String feed() {
 		// TODO Auto-generated method stub
 		return "Employee feeds Panada with fishes" ; 
 	}
 
-	@Override
-	public String clean() {
+	
+	public static String clean() {
 		// TODO Auto-generated method stub
 		return "Employee cleans water and ground for Panada" ; 
 	}
 
-	@Override
-	public String play() {
+	
+	public static String play() {
 		// TODO Auto-generated method stub
 		return "Visitor plays with banda by feeding him some fishes" ; 
 	}
 
-	@Override
-	public String feedSnack() {
+	
+	public static String feedSnack() {
 		// TODO Auto-generated method stub
 		return "Visitor feeds Panada some fishes" ; 
 	}
 
-	@Override
-	public String talk() {
+	
+	public static String talk() {
 		// TODO Auto-generated method stub
 		return "Panda growls" ; 
 	}
 
-	@Override
-	public String move() {
+	
+	public static String move() {
 		// TODO Auto-generated method stub
 		return "Panda runs on the ground" ; 
 	}
 
-	@Override
-	public String eat() {
+	
+	public static String eat() {
 		// TODO Auto-generated method stub
 		return "Panda eats bushes and fishes" ; 
 	}

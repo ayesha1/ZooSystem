@@ -2,6 +2,11 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.ListIterator;
 
+/**
+ * Generates all the environments, all the employees, and all the animals.
+ * @author Osama
+ *
+ */
 public class Zoo {
 	public static LinkedList<Visitor> listOfVisitors = new LinkedList<Visitor>();
 	ListIterator<Visitor> iterator = listOfVisitors.listIterator();
