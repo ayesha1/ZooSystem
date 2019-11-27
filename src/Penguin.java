@@ -1,19 +1,15 @@
 
-public class Lion extends Animal {
+public class Penguin extends Animal {
 
-	public Lion() {
+	public Penguin() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Lion(String name, int age, Environment environment, Employee caretaker) {
+	public Penguin(String name, int age, Environment environment, Employee caretaker) {
 		super(name, age, environment, caretaker);
 		// TODO Auto-generated constructor stub
 	}
 
-	
-	
-	
-	
 	@Override
 	public String feed() {
 		// TODO Auto-generated method stub
@@ -56,6 +52,4 @@ public class Lion extends Animal {
 		return super.eat();
 	}
 
-	
-	
 }

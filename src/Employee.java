@@ -26,12 +26,6 @@ public class Employee extends Human {
 		
 		super(firstName, middleName, lastName, streetAddress, city, state, country, zipcode, monthBorn, dayBorn, yearBorn);
 		
-		this.socialSecurity = socialSecurity;
-		this.workType = workType;
-		this.salary = salary;
-		this.email = email;
-		this.password = password;	
-		
 	}
 
 	public long getSocialSecurity() {

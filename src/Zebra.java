@@ -5,7 +5,7 @@ public class Zebra extends Animal {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Zebra(String name, int age, Environment environment, Caretaker caretaker) {
+	public Zebra(String name, int age, Environment environment, Employee caretaker) {
 		super(name, age, environment, caretaker);
 		// TODO Auto-generated constructor stub
 	}

@@ -4,7 +4,11 @@
 /AnimalEmployeeInteract.class
 /AnimalVisitorInteract.class
 /Aquatic.class
+/images/
+/roundbutton.css
 /Arctic.class
+/Zoo.class
+/Owner.class
 /Camel.class
 /Caretaker.class
 /CheckoutPage.class
@@ -21,8 +25,6 @@
 /Lion.class
 /Monkey.class
 /MonkeyPage.class
-/Owner.class
-/OwnerPage.class
 /Panda.class
 /ParkVisitationScreen.class
 /RoundButton$1.class
@@ -38,6 +40,5 @@
 /Visitor.class
 /Welcome.class
 /Zebra.class
-/Zoo.class
-/images/
-/roundbutton.css
+/Dolphin.class
+/Penguin.class

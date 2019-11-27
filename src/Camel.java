@@ -5,7 +5,7 @@ public class Camel extends Animal {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Camel(String name, int age, Environment environment, Caretaker caretaker) {
+	public Camel(String name, int age, Environment environment, Employee caretaker) {
 		super(name, age, environment, caretaker);
 		// TODO Auto-generated constructor stub
 	}
