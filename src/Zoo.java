@@ -8,8 +8,22 @@ public class Zoo {
 	
 	public Zoo() {
 		// TODO Auto-generated constructor stub
+		this.owner = new Owner("Jimbob", "Jerry", "Jones");
+		this.employees = generateEmployees();
+		
+		//empty list. added upon when visitors fill out form
+		visitors = new ArrayList<>();
 	}
-
+	
+	/**
+	 * Hard code a bunch of employees and return a list of them
+	 * @return
+	 */
+	private ArrayList<Employee> generateEmployees() {
+//		Caretaker a = new Caretaker();
+		return null;
+	}
+	
 	public Owner getOwner() {
 		return owner;
 	}
