@@ -12,44 +12,44 @@ public class Zebra extends Animal {
 	
 	
 	
-	@Override
-	public String feed() {
+	
+	public static String feed() {
 		// TODO Auto-generated method stub
 		return "Employee feeds Zebra with twigs, grass, and herbs " ; 
 	}
 
-	@Override
-	public String clean() {
+	
+	public static String clean() {
 		// TODO Auto-generated method stub
 		return "Employee cleans ground and water body for Zebra" ; 
 	}
 
-	@Override
-	public String play() {
+	
+	public static String play() {
 		// TODO Auto-generated method stub
 		return "Visitors play by looking at running Zebra in the cage or in the fence" ; 
 	}
 
-	@Override
-	public String feedSnack() {
+	
+	public static String feedSnack() {
 		// TODO Auto-generated method stub
 		return "Visitors feeds Zebra with herbs and grass" ; 
 	}
 
-	@Override
-	public String talk() {
+	
+	public static String talk() {
 		// TODO Auto-generated method stub
 		return "Zebra makes sounds like GRHHHHHHHHHHHHHHHHHHHHHH" ; 
 	}
 
-	@Override
-	public String move() {
+	
+	public static String move() {
 		// TODO Auto-generated method stub
 		return "Zebra run on the ground" ; 
 	}
 
-	@Override
-	public String eat() {
+	
+	public static String eat() {
 		// TODO Auto-generated method stub
 		return "Zebra eats grass and herbs from the ground " ; 
 	}

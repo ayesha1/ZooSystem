@@ -12,38 +12,38 @@ public class Camel extends Animal {
 	
 	
 	
-	@Override
-	public String feed() {
+	
+	public static String feed() {
 		return "Employee feeds camel with grass" ; 
 	}
 
-	@Override
-	public String clean() {
+	
+	public static String clean() {
 		return "Employee cleans sand for the camel" ; 
 	}
 
-	@Override
-	public String play() {
+	
+	public static String play() {
 		return "Visitors rides camel back" ; 
 	}
 
-	@Override
-	public String feedSnack() {
+	
+	public static String feedSnack() {
 		return "Visitors feed camel with bushes and grass" ; 
 	}
 
-	@Override
-	public String talk() {
+	
+	public static String talk() {
 		return "Camel says EOOOOUUUUUHHHHHHH" ; 
 	}
 
-	@Override
-	public String move() {
+	
+	public static String move() {
 		return "Camel moves in the sand" ; 
 	}
 
-	@Override
-	public String eat() {
+	
+	public static String eat() {
 		return "Camel eats grass and bushes";
 	}
 

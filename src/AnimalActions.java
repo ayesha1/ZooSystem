@@ -1,9 +1,33 @@
 
 public interface AnimalActions {
 
-	String talk();
-	String move();
-	String eat();
+
+
+
+	static String play() {
+		return "Animal actions interface";
+	}
+	static String feedSnack() {
+		return "Animal actions interface";
+	}
+
+	//employee action
+	static String feed() {
+		return "Animal actions interface";
+	}
+	static String clean() {
+		return "Animal actions interface";
+	}
 	
-	//etc
+	//animal actions
+	static String talk() {
+		return "Animal actions interface";
+	}
+	static String move() {
+		return "Animal actions interface";
+	}
+	static String eat() {
+		return "Animal actions interface";
+	}
+
 }
