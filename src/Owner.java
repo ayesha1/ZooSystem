@@ -1,8 +1,11 @@
 
 public class Owner extends Human {
 
-	public Owner(String firstName, String middleName, String lastName) {
+	private double money;
+	
+	public Owner(String firstName, String middleName, String lastName, double money) {
 		super(firstName, middleName, lastName);
+		this.money = money;
 		// TODO Auto-generated constructor stub
 	}
 

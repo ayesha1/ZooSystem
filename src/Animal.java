@@ -1,4 +1,16 @@
 
+/**
+ * This is parent class Animal
+ * 
+ * Camel, Dolphin, Elephant, Giraffe, Gorilla, Koala, Lion, Monkey, Panda, Penguin, Sloth, Snake, Tortoise, and Zebra extend this
+ * 
+ * It implements interface AnimalActions which has 7 static methods. This class only implements those with return null, subclasses 
+ * will implement more intensly.
+ * 
+ * 
+ * @author Osama
+ *
+ */
 public class Animal implements AnimalActions {
 
 	private String name;
