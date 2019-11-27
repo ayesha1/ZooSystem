@@ -14,7 +14,6 @@ import javafx.geometry.Pos;
 
 public class CheckoutPage extends Application {
 	public static LinkedList<Visitor> listOfVisitors = new LinkedList<Visitor>();
-	ListIterator<Visitor> iterator = listOfVisitors.listIterator();
 	
 	public static void main(String[] args) {
 		launch(args);
