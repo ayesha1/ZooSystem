@@ -2,7 +2,10 @@
 public class Visitor extends Human {
 
 	private int age;
-
+	public Visitor(String name, int age) {
+		super(name);
+		this.age = age;
+	}
 
 	public Visitor(String firstName, String middleName, String lastName, int age) {
 		super(firstName, middleName, lastName);
