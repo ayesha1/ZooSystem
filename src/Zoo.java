@@ -11,10 +11,19 @@ public class Zoo {
 	private ArrayList<Visitor> visitors;
 	public static int pay;
 	
+	
+	
+	/**
+	 * What Zoo is supposed to do is on creation of object, it generates all the things for the zoo. This includes generating
+	 * all the environments, all the animals, all the workers, and the owner. 
+	 * 
+	 * 
+	 */
 	public Zoo() {
 		// TODO Auto-generated constructor stub
 		this.owner = new Owner("Jimbob", "Jerry", "Jones");
-		this.employees = generateZoo();
+		
+		generateZoo();
 		
 		//empty list. added upon when visitors fill out form
 		visitors = new ArrayList<>();
@@ -27,7 +36,7 @@ public class Zoo {
 			double salary, String email, String password
 	 * @return
 	 */
-	private ArrayList<Employee> generateZoo() { 
+	private void generateZoo() { 
 		Employee aquaticCaretaker = new Employee("James", "John", "Gilligan", 1234567, "Fulltime", 45000, "johngil@zoo.com", "123abc");
 		Employee arcticCaretaker = new Employee("Man", "Man", "Three", 1234567, "Fulltime", 45000, "manthree@zoo.com", "123abc");
 		Employee desertCaretaker = new Employee("Monica", "Stone", "Georgia", 1234567, "Fulltime", 55000, "monicageorge@zoo.com", "123abc");
@@ -71,7 +80,6 @@ public class Zoo {
 		tropicalEnv.addAnimal(new Monkey("Kea", 15, tropicalEnv, tropicalCaretaker));
 
 
-		return null;
 	}
 	
 
