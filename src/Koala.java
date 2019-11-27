@@ -15,43 +15,42 @@ public class Koala extends Animal {
 	@Override
 	public String feed() {
 		// TODO Auto-generated method stub
-		return super.feed();
+		return "Employee feeds Koala with gum leaves" ; 
 	}
 
 	@Override
 	public String clean() {
-		// TODO Auto-generated method stub
-		return super.clean();
+		return "Employee cleans ground surface for Koala";
 	}
 
 	@Override
 	public String play() {
 		// TODO Auto-generated method stub
-		return super.play();
+		return "Visitors play with Koala by patting on the back" ; 
 	}
 
 	@Override
 	public String feedSnack() {
 		// TODO Auto-generated method stub
-		return super.feedSnack();
+		return "Visitors feed Koala some gum leaves and other tree leaves" ; 
 	}
 
 	@Override
 	public String talk() {
 		// TODO Auto-generated method stub
-		return super.talk();
+		return "Koala says GRRHHHHHH and grunts" ; 
 	}
 
 	@Override
 	public String move() {
 		// TODO Auto-generated method stub
-		return super.move();
+		return "Koala climbs up the tree and move on the branches" ; 
 	}
 
 	@Override
 	public String eat() {
 		// TODO Auto-generated method stub
-		return super.eat();
+		return "Koala eats gum leaves" ; 
 	}
 
 }

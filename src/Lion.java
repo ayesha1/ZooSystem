@@ -17,43 +17,43 @@ public class Lion extends Animal {
 	@Override
 	public String feed() {
 		// TODO Auto-generated method stub
-		return super.feed();
+		return "Employee feeds Lion with meat" ; 
 	}
 
 	@Override
 	public String clean() {
 		// TODO Auto-generated method stub
-		return super.clean();
+		return "Employee cleans ground and water for Lion" ; 
 	}
 
 	@Override
 	public String play() {
 		// TODO Auto-generated method stub
-		return super.play();
+		return "Visitors play by teasing the caged Lion" ; 
 	}
 
 	@Override
 	public String feedSnack() {
 		// TODO Auto-generated method stub
-		return super.feedSnack();
+		return "Visitors feed lion by throwing meat" ; 
 	}
 
 	@Override
 	public String talk() {
 		// TODO Auto-generated method stub
-		return super.talk();
+		return "Lions roars" ; 
 	}
 
 	@Override
 	public String move() {
 		// TODO Auto-generated method stub
-		return super.move();
+		return "Lion run around on the ground" ; 
 	}
 
 	@Override
 	public String eat() {
 		// TODO Auto-generated method stub
-		return super.eat();
+		return "Lion eat meat and other animals" ; 
 	}
 
 	

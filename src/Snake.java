@@ -15,43 +15,43 @@ public class Snake extends Animal {
 	@Override
 	public String feed() {
 		// TODO Auto-generated method stub
-		return super.feed();
+		return "Employee feeds snakes with rodents and birds" ; 
 	}
 
 	@Override
 	public String clean() {
 		// TODO Auto-generated method stub
-		return super.clean();
+		return "Employee cleans water bed and ground holes for snakes" ; 
 	}
 
 	@Override
 	public String play() {
 		// TODO Auto-generated method stub
-		return super.play();
+		return "Visitors hang snakes on their arms our around their body" ; 
 	}
 
 	@Override
 	public String feedSnack() {
 		// TODO Auto-generated method stub
-		return super.feedSnack();
+		return "Visitors feed snakes with some dead rodents and birds" ; 
 	}
 
 	@Override
 	public String talk() {
 		// TODO Auto-generated method stub
-		return super.talk();
+		return "Snakes says szzzzzzzzzzzzzzzzzz" ; 
 	}
 
 	@Override
 	public String move() {
 		// TODO Auto-generated method stub
-		return super.move();
+		return "Snakes crawls " ; 
 	}
 
 	@Override
 	public String eat() {
 		// TODO Auto-generated method stub
-		return super.eat();
+		return "Snakes eats rodents and birds" ; 
 	}
 
 }

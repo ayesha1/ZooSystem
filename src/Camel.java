@@ -14,44 +14,37 @@ public class Camel extends Animal {
 	
 	@Override
 	public String feed() {
-		// TODO Auto-generated method stub
-		return super.feed();
+		return "Employee feeds camel with grass" ; 
 	}
 
 	@Override
 	public String clean() {
-		// TODO Auto-generated method stub
-		return super.clean();
+		return "Employee cleans sand for the camel" ; 
 	}
 
 	@Override
 	public String play() {
-		// TODO Auto-generated method stub
-		return super.play();
+		return "Visitors rides camel back" ; 
 	}
 
 	@Override
 	public String feedSnack() {
-		// TODO Auto-generated method stub
-		return super.feedSnack();
+		return "Visitors feed camel with bushes and grass" ; 
 	}
 
 	@Override
 	public String talk() {
-		// TODO Auto-generated method stub
-		return super.talk();
+		return "Camel says EOOOOUUUUUHHHHHHH" ; 
 	}
 
 	@Override
 	public String move() {
-		// TODO Auto-generated method stub
-		return super.move();
+		return "Camel moves in the sand" ; 
 	}
 
 	@Override
 	public String eat() {
-		// TODO Auto-generated method stub
-		return super.eat();
+		return "Camel eats grass and bushes";
 	}
 
 }
