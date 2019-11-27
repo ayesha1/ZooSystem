@@ -48,13 +48,13 @@ public class Zoo {
 		Employee forestCaretaker = new Employee("Albert", "John", "Jones", 1234567, "Fulltime", 45000, "albjones@zoo.com", "123abc");
 		Employee savannaCaretaker = new Employee("Carlos", "", "Gilligan", 1234567, "Parttime", 25000, "carlos@zoo.com", "123abc");
 		Employee tropicalCaretaker = new Employee("Katie", "Carly", "Corbelt", 1234567, "Fulltime", 65000, "KatieCorblet@zoo.com", "123abc");
-
-		this.employees.add(tropicalCaretaker);
 		this.employees.add(aquaticCaretaker);
-		this.employees.add(savannaCaretaker);
-		this.employees.add(forestCaretaker);
 		this.employees.add(arcticCaretaker);
 		this.employees.add(desertCaretaker);
+		this.employees.add(forestCaretaker);
+		this.employees.add(savannaCaretaker);
+		this.employees.add(tropicalCaretaker);
+
 		
 		Environment aquaticEnv = new Aquatic(68, "blue", new ArrayList<Animal>());
 		aquaticEnv.addAnimal(new Dolphin("Jerry", 7, aquaticEnv, aquaticCaretaker));

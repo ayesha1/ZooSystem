@@ -8,8 +8,8 @@ public class Employee extends Human {
 	private double salary; //yearly
 	
 	//Login information
-	private String email;
-	private String password;
+	String email;
+	 String password;
 	
 	public Employee(String firstName, String middleName, String lastName, long socialSecurity, String workType,
 			double salary, String email, String password) {
