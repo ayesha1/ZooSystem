@@ -13,19 +13,19 @@ import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 
 public class CheckoutPage extends Application {
-	LinkedList<Visitor> listOfVisitors = new LinkedList<Visitor>();
+	public static LinkedList<Visitor> listOfVisitors = new LinkedList<Visitor>();
 	ListIterator<Visitor> iterator = listOfVisitors.listIterator();
-
+	
 	public static void main(String[] args) {
 		launch(args);
 	}
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-
 		primaryStage.setTitle("Welcome");
 		// creating label email
 		Text text1 = new Text("Name");
+		Text alert = new Text("");
 
 		// creating label password
 		Text text2 = new Text("Age");
@@ -39,6 +39,39 @@ public class CheckoutPage extends Application {
 		// Creating Buttons
 		Button button1 = new Button("Submit");
 		Button button2 = new Button("Go Back");
+		
+		button1.setOnAction(e -> {
+			if (textField1.getText().trim().equals("") || textField2.getText().trim().equals("")) {
+				alert.setText("SOME AREAS ARE BLANK");
+				alert.setFill(javafx.scene.paint.Color.RED);
+			} else if (!textField2.getText().trim().matches("((-|\\+)?[0-9]+(\\.[0-9]+)?)+")) {
+				alert.setText("AGE IS NOT AN INTEGER");
+				alert.setFill(javafx.scene.paint.Color.RED);
+			}
+			else {
+				String name = textField1.getText();
+				String age = textField2.getText();
+				Visitor newVisitor = new Visitor(name, Integer.parseInt(age));
+				CheckoutPage.listOfVisitors.add(newVisitor);
+			}
+			ParkVisitationScreen login = new ParkVisitationScreen();
+			try {
+				login.start(primaryStage);
+			} catch (Exception e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+		});
+		
+		button2.setOnAction(e -> {
+			Welcome login = new Welcome();
+			try {
+				login.start(primaryStage);
+			} catch (Exception e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+		});
 
 		button1.setStyle("-fx-background-color: \n" + "        #090a0c,\n"
 				+ "        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),\n"
@@ -75,6 +108,8 @@ public class CheckoutPage extends Application {
 		gridPane.add(textField2, 1, 2);
 		gridPane.add(button1, 2, 3);
 		gridPane.add(button2, 1, 3);
+		gridPane.add(alert, 1, 4);
+
 		Scene scene = new Scene(gridPane, 1000, 700);
 
 		primaryStage.setScene(scene);

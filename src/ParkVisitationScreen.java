@@ -28,6 +28,19 @@ public class ParkVisitationScreen extends Application {
 		Text text1 = new Text("Please select a park to visit!");
 		text1.setStyle("-fx-font-size: 40;");
 		
+		Button exitButton = new Button("Back to Welcome Page");
+		
+		exitButton.setOnAction(e -> {
+			Welcome login = new Welcome();
+			try {
+				login.start(primaryStage);
+			} catch (Exception e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+		});
+
+		
 		Image tropicalImage = new Image("/images/Tropical.png");
 		ImageView tropicalView = new ImageView(tropicalImage);
 		tropicalView.setFitWidth(200);
@@ -141,6 +154,8 @@ public class ParkVisitationScreen extends Application {
 		gridPane.setAlignment(Pos.CENTER);
 
 		gridPane.add(text1, 1, 0);
+		gridPane.add(exitButton, 0, 0);
+
 		gridPane.add(tropicalView, 0, 1);
 		gridPane.add(forestView, 1, 1);
 		gridPane.add(savannahView, 2, 1);
