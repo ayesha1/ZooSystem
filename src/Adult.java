@@ -1,7 +1,7 @@
 
 public class Adult extends Visitor {
 
-	private int ticketAmt;
+	private int ticketAmt = 15;
 
 	public Adult(String firstName, String middleName, String lastName, int age, int ticketAmt) {
 		
@@ -25,11 +25,4 @@ public class Adult extends Visitor {
 	public int getTicketAmt() {
 		return ticketAmt;
 	}
-
-	public void setTicketAmt(int ticketAmt) {
-		this.ticketAmt = ticketAmt;
-	}
-	
-	
-
 }
