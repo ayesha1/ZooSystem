@@ -52,25 +52,28 @@ public class CheckoutPage extends Application {
 				String age = textField2.getText();
 				Visitor newVisitor = new Visitor(name, Integer.parseInt(age));
 				CheckoutPage.listOfVisitors.add(newVisitor);
-			}
-			ParkVisitationScreen login = new ParkVisitationScreen();
-			try {
-				login.start(primaryStage);
-			} catch (Exception e1) {
-				// TODO Auto-generated catch block
-				e1.printStackTrace();
-			}
+				int age1 = Integer.parseInt(age);
+				
+				if (age1 > 0 || age1 < 18) {
+					Zoo.pay += 10;
+				} else if (age1 < 65 || age1 >= 18) {
+					Zoo.pay += 15;
+				} if (age1 > 65) {
+					Zoo.pay += 9;
+				}
+	
+				ParkVisitationScreen login = new ParkVisitationScreen();
+				try {
+					login.start(primaryStage);
+				} catch (Exception e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+				}
+			
+			
 		});
 		
-		button2.setOnAction(e -> {
-			Welcome login = new Welcome();
-			try {
-				login.start(primaryStage);
-			} catch (Exception e1) {
-				// TODO Auto-generated catch block
-				e1.printStackTrace();
-			}
-		});
 
 		button1.setStyle("-fx-background-color: \n" + "        #090a0c,\n"
 				+ "        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),\n"

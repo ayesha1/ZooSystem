@@ -65,6 +65,16 @@ public class Welcome extends Application {
 				"    -fx-font-size: 12px;\n" + 
 				"    -fx-padding: 10 20 10 20;");
 		
+		button.setOnAction(e -> {
+			OwnerPage login = new OwnerPage();
+			try {
+				login.start(primaryStage);
+			} catch (Exception e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+		});
+		
 		button1 = new Button();
 		button1.setText("Visitor");
 		button1.setStyle("-fx-background-color: \n" + 
