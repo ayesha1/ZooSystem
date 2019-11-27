@@ -27,7 +27,7 @@ public class Zebra extends Animal {
 	
 	public static String play() {
 		// TODO Auto-generated method stub
-		return "Visitors play by looking at running Zebra in the cage or in the fence" ; 
+		return "Visitors play catch the grass stick with zebra" ; 
 	}
 
 	

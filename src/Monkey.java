@@ -26,7 +26,7 @@ public class Monkey extends Animal {
 	
 	public static String play() {
 		// TODO Auto-generated method stub
-		return "Visitors play by teasing the caged Monkey" ; 
+		return "Visitors play Hide and Seek with Monkey" ; 
 	}
 
 	
