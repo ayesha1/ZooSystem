@@ -27,7 +27,8 @@ public class Sloth extends Animal {
 	@Override
 	public String play() {
 		// TODO Auto-generated method stub
-		return "Visitor play with sloth by picking them up from behind" ; 
+		return "Visitor play with sloth by picking them up from behind"; 
+	}
 	@Override
 	public String feedSnack() {
 		// TODO Auto-generated method stub
