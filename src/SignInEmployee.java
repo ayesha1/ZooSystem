@@ -25,11 +25,6 @@ public class SignInEmployee extends Application {
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-		Zoo.generateZoo();
-		ArrayList<Employee> list = new ArrayList<Employee>(Zoo.employees.size()); 
-		ListIterator<Employee> iterator = list.listIterator();
-		  for (int i=0; i<Zoo.employees.size(); i++) 
-	            list.add(Zoo.employees.get(i)); 
 	  
 
 		primaryStage.setTitle("Employee Sign In");
@@ -75,18 +70,18 @@ public class SignInEmployee extends Application {
 		button1.setOnAction(e -> {
 			String email = textField1.getText();
 			String password = textField2.getText();
-			while (iterator.hasNext()) { 
-				Employee curr = iterator.next();
-				if ((curr.email == email) && curr.password == password) {
-					CheckoutPage login = new CheckoutPage(); // TODO: Change to employee info page.
-					try {
-						login.start(primaryStage);
-					} catch (Exception e1) {
-						// TODO Auto-generated catch block
-						e1.printStackTrace();
-					}
-				}
-			}
+//			while (iterator.hasNext()) { 
+//				Employee curr = iterator.next();
+//				if ((curr.email == email) && curr.password == password) {
+//					CheckoutPage login = new CheckoutPage(); // TODO: Change to employee info page.
+//					try {
+//						login.start(primaryStage);
+//					} catch (Exception e1) {
+//						// TODO Auto-generated catch block
+//						e1.printStackTrace();
+//					}
+//				}
+//			}
 			
 		});
 
