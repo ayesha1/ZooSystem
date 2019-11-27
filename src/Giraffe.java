@@ -15,44 +15,37 @@ public class Giraffe extends Animal {
 	
 	@Override
 	public String feed() {
-		// TODO Auto-generated method stub
-		return super.feed();
+		return "Employee feeds Giraffe with wild apricot and shrubs" ; 
 	}
 
 	@Override
 	public String clean() {
-		// TODO Auto-generated method stub
-		return super.clean();
+		return "Employee cuts weeds and cleans the ground for Giraffe" ;  
 	}
 
 	@Override
 	public String play() {
-		// TODO Auto-generated method stub
-		return super.play();
+		return "Visitor plays with Giraffe face";
 	}
 
 	@Override
 	public String feedSnack() {
-		// TODO Auto-generated method stub
-		return super.feedSnack();
+		return "Visitors feed twigs to Giraffe";
 	}
 
 	@Override
 	public String talk() {
-		// TODO Auto-generated method stub
-		return super.talk();
+		return "Giraffe makes flute like noises";
 	}
 
 	@Override
 	public String move() {
-		// TODO Auto-generated method stub
-		return super.move();
+		return "Giraffe moves and runs on the ground";
 	}
 
 	@Override
 	public String eat() {
-		// TODO Auto-generated method stub
-		return super.eat();
+		return "Giraffe eats twigs";
 	}
 
 }

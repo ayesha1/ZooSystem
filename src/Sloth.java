@@ -15,43 +15,41 @@ public class Sloth extends Animal {
 	@Override
 	public String feed() {
 		// TODO Auto-generated method stub
-		return super.feed();
+		return "Employee feeds sloth with dead and alive insects" ; 
 	}
 
 	@Override
 	public String clean() {
 		// TODO Auto-generated method stub
-		return super.clean();
+		return "Employee clears and cuts tree branches for sloth" ; 
 	}
 
 	@Override
 	public String play() {
 		// TODO Auto-generated method stub
-		return super.play();
-	}
-
+		return "Visitor play with sloth by picking them up from behind" ; 
 	@Override
 	public String feedSnack() {
 		// TODO Auto-generated method stub
-		return super.feedSnack();
+		return "Visitor feeds sloth with insects" ; 
 	}
 
 	@Override
 	public String talk() {
 		// TODO Auto-generated method stub
-		return super.talk();
+		return "Sloth makes squeaky noises" ; 
 	}
 
 	@Override
 	public String move() {
 		// TODO Auto-generated method stub
-		return super.move();
+		return "Sloth climbs up the tree and hanges upside down" ; 
 	}
 
 	@Override
 	public String eat() {
 		// TODO Auto-generated method stub
-		return super.eat();
+		return "Sloth eats live as well as dead insects" ; 
 	}
 
 }

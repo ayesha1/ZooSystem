@@ -13,43 +13,43 @@ public class Penguin extends Animal {
 	@Override
 	public String feed() {
 		// TODO Auto-generated method stub
-		return super.feed();
+		return "Employee feeds Penguin with fishes" ; 
 	}
 
 	@Override
 	public String clean() {
 		// TODO Auto-generated method stub
-		return super.clean();
+		return "Employee cleans the floor and water for Penguin" ; 
 	}
 
 	@Override
 	public String play() {
 		// TODO Auto-generated method stub
-		return super.play();
+		return "Visitor tocuhes and play with Penguin" ; 
 	}
 
 	@Override
 	public String feedSnack() {
 		// TODO Auto-generated method stub
-		return super.feedSnack();
+		return "Visitor feed fishes and other aquatic grass to Penguin" ; 
 	}
 
 	@Override
 	public String talk() {
 		// TODO Auto-generated method stub
-		return super.talk();
+		return "Penguins beeps and moans" ; 
 	}
 
 	@Override
 	public String move() {
 		// TODO Auto-generated method stub
-		return super.move();
+		return "Penguin walks on ground and swims in water" ;
 	}
 
 	@Override
 	public String eat() {
 		// TODO Auto-generated method stub
-		return super.eat();
+		return "Penguin eats fishes and aquatic grass" ; 
 	}
 
 }

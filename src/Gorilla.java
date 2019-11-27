@@ -15,44 +15,37 @@ public class Gorilla extends Animal {
 	
 	@Override
 	public String feed() {
-		// TODO Auto-generated method stub
-		return super.feed();
+		return "Employee feeds Gorilla with banana and fruits";
 	}
 
 	@Override
 	public String clean() {
-		// TODO Auto-generated method stub
-		return super.clean();
+		return "Employee cleans the cage area and shelter for Gorilla";
 	}
 
 	@Override
 	public String play() {
-		// TODO Auto-generated method stub
-		return super.play();
+		return "Visitors shake hands with Gorilla";
 	}
 
 	@Override
 	public String feedSnack() {
-		// TODO Auto-generated method stub
-		return super.feedSnack();
+		return "Visitors feed Gorilla with watermelon and banana";
 	}
 
 	@Override
 	public String talk() {
-		// TODO Auto-generated method stub
-		return super.talk();
+		return "Gorilla makes human like loud noises and says OOOOOUUUUUHHHH";
 	}
 
 	@Override
 	public String move() {
-		// TODO Auto-generated method stub
-		return super.move();
+		return "Gorilla climbs up the tree";
 	}
 
 	@Override
 	public String eat() {
-		// TODO Auto-generated method stub
-		return super.eat();
+		return "Gorilla eats fruits like banana and watermelon";
 	}
 
 }

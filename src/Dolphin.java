@@ -12,43 +12,36 @@ public class Dolphin extends Animal {
 	
 	@Override
 	public String feed() {
-		// TODO Auto-generated method stub
-		return super.feed();
+		return "Employee feeds Dolphin with herring fishes" ; 
 	}
 
 	@Override
 	public String clean() {
-		// TODO Auto-generated method stub
-		return super.clean();
+		return "Employee cleans water for Dolphin";
 	}
 
 	@Override
 	public String play() {
-		// TODO Auto-generated method stub
-		return super.play();
+		return "Visitors play hit the ball with Dolphin" ;
 	}
 
 	@Override
 	public String feedSnack() {
-		// TODO Auto-generated method stub
-		return super.feedSnack();
+		return "Visitors feeds dolphin some fishes";
 	}
 
 	@Override
 	public String talk() {
-		// TODO Auto-generated method stub
-		return super.talk();
+		return "Dolphin says EIIIIIIIHHHH";
 	}
 
 	@Override
 	public String move() {
-		// TODO Auto-generated method stub
-		return super.move();
+		return "Dolphin swims in the water and moves up in the water";
 	}
 
 	@Override
 	public String eat() {
-		// TODO Auto-generated method stub
-		return super.eat();
+		return "Dolphin eats herring fishes and cod" ;
 	}
 }

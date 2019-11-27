@@ -14,44 +14,38 @@ public class Elephant extends Animal {
 	
 	@Override
 	public String feed() {
-		// TODO Auto-generated method stub
-		return super.feed();
+		
+		return "Employee feeds Elephant with fruits and bushes" ; 
 	}
 
 	@Override
 	public String clean() {
-		// TODO Auto-generated method stub
-		return super.clean();
+		return "Employee cleans water body for Elephant";
 	}
 
 	@Override
 	public String play() {
-		// TODO Auto-generated method stub
-		return super.play();
+		return "Visitors ride on Elephant back";
 	}
 
 	@Override
 	public String feedSnack() {
-		// TODO Auto-generated method stub
-		return super.feedSnack();
+		return "Visitors feed Elephant with fruits and bushes";
 	}
 
 	@Override
 	public String talk() {
-		// TODO Auto-generated method stub
-		return super.talk();
+		return "Elephant makes squeaking and roaring sounds" ;
 	}
 
 	@Override
 	public String move() {
-		// TODO Auto-generated method stub
-		return super.move();
+		return "Elephant moves in and out of the water";
 	}
 
 	@Override
 	public String eat() {
-		// TODO Auto-generated method stub
-		return super.eat();
+		return "Elephant eats furits and bushes";
 	}
 
 }
