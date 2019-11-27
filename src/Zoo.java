@@ -18,7 +18,9 @@ public class Zoo {
 	
 	public Zoo() {
 		// TODO Auto-generated constructor stub
-		this.owner = new Owner("Jimbob", "Jerry", "Jones");
+		
+		//this is our owner
+		this.owner = new Owner("Jimbob", "Jerry", "Jones", 0);
 		
 		generateZoo();
 		
