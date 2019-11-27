@@ -18,4 +18,31 @@ public class Environment {
 		this.animals = animals ; 
 	}
 
+	public double getTemperature() {
+		return temperature;
+	}
+
+	public void setTemperature(double temperature) {
+		this.temperature = temperature;
+	}
+
+	public String getColorTone() {
+		return colorTone;
+	}
+
+	public void setColorTone(String colorTone) {
+		this.colorTone = colorTone;
+	}
+
+	public ArrayList<Animal> getAnimals() {
+		return animals;
+	}
+
+	public void setAnimals(ArrayList<Animal> animals) {
+		this.animals = animals;
+	}
+
+	public void addAnimal(Animal anim) {
+		this.animals.add(anim);
+	}
 }
