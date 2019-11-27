@@ -1,4 +1,8 @@
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.ListIterator;
+
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -13,6 +17,7 @@ import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 
 public class SignInEmployee extends Application {
+	public static Employee employeesignedIn; // global variable to see which employee is signed in
 
 	public static void main(String[] args) {
 		launch(args);
@@ -20,6 +25,12 @@ public class SignInEmployee extends Application {
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
+		Zoo.generateZoo();
+		ArrayList<Employee> list = new ArrayList<Employee>(Zoo.employees.size()); 
+		ListIterator<Employee> iterator = list.listIterator();
+		  for (int i=0; i<Zoo.employees.size(); i++) 
+	            list.add(Zoo.employees.get(i)); 
+	  
 
 		primaryStage.setTitle("Employee Sign In");
 		// creating label email
@@ -33,7 +44,9 @@ public class SignInEmployee extends Application {
 
 		// Creating Text Filed for password
 		TextField textField2 = new TextField();
-
+		
+		Text alert = new Text("");
+		
 		Button button1 = new Button();
 		button1.setText("Submit");
 		button1.setMaxHeight(200);
@@ -59,18 +72,25 @@ public class SignInEmployee extends Application {
 				+ "    -fx-font-family: \"Arial\";\n" + "    -fx-text-fill: linear-gradient(white, #d0d0d0);\n"
 				+ "    -fx-font-size: 12px;\n" + "    -fx-padding: 10 20 10 20;");
 
-//		button1.setOnAction(e -> {
-//			CheckoutPage login = new CheckoutPage();
-//			try {
-//				login.start(primaryStage);
-//			} catch (Exception e1) {
-//				// TODO Auto-generated catch block
-//				e1.printStackTrace();
-//			}
-//		});
+		button1.setOnAction(e -> {
+			String email = textField1.getText();
+			String password = textField2.getText();
+			while (iterator.hasNext()) { 
+				Employee curr = iterator.next();
+				if ((curr.email == email) && curr.password == password) {
+					CheckoutPage login = new CheckoutPage(); // TODO: Change to employee info page.
+					try {
+						login.start(primaryStage);
+					} catch (Exception e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
+				}
+			}
+			
+		});
 
 		GridPane gridPane = new GridPane();
-		gridPane.setAlignment(Pos.CENTER);
 
 		// Setting the padding
 		gridPane.setPadding(new Insets(10, 10, 10, 10));
@@ -89,6 +109,7 @@ public class SignInEmployee extends Application {
 		gridPane.add(textField2, 1, 1);
 		gridPane.add(button1, 0, 2);
 		gridPane.add(button2, 1, 2);
+		gridPane.add(alert, 2, 1);
 
 		gridPane.setHgap(20);
 		gridPane.setVgap(20);

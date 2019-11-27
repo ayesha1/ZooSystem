@@ -7,14 +7,14 @@ public class Zoo {
 	ListIterator<Visitor> iterator = listOfVisitors.listIterator();
 	
 	private Owner owner;
-	private ArrayList<Employee> employees;
+	public static ArrayList<Employee> employees;
 	private ArrayList<Visitor> visitors;
 	public static int pay;
 	
 	public Zoo() {
 		// TODO Auto-generated constructor stub
 		this.owner = new Owner("Jimbob", "Jerry", "Jones");
-		this.employees = generateZoo();
+		 generateZoo();
 		
 		//empty list. added upon when visitors fill out form
 		visitors = new ArrayList<>();
@@ -27,20 +27,21 @@ public class Zoo {
 			double salary, String email, String password
 	 * @return
 	 */
-	private ArrayList<Employee> generateZoo() { 
+	public static void generateZoo() { 
+		
 		Employee aquaticCaretaker = new Employee("James", "John", "Gilligan", 1234567, "Fulltime", 45000, "johngil@zoo.com", "123abc");
 		Employee arcticCaretaker = new Employee("Man", "Man", "Three", 1234567, "Fulltime", 45000, "manthree@zoo.com", "123abc");
 		Employee desertCaretaker = new Employee("Monica", "Stone", "Georgia", 1234567, "Fulltime", 55000, "monicageorge@zoo.com", "123abc");
 		Employee forestCaretaker = new Employee("Albert", "John", "Jones", 1234567, "Fulltime", 45000, "albjones@zoo.com", "123abc");
 		Employee savannaCaretaker = new Employee("Carlos", "", "Gilligan", 1234567, "Parttime", 25000, "carlos@zoo.com", "123abc");
 		Employee tropicalCaretaker = new Employee("Katie", "Carly", "Corbelt", 1234567, "Fulltime", 65000, "KatieCorblet@zoo.com", "123abc");
+		Zoo.employees.add(aquaticCaretaker);
+		Zoo.employees.add(arcticCaretaker);
+		Zoo.employees.add(desertCaretaker);
+		Zoo.employees.add(forestCaretaker);
+		Zoo.employees.add(savannaCaretaker);
+		Zoo.employees.add(tropicalCaretaker);
 
-		this.employees.add(tropicalCaretaker);
-		this.employees.add(aquaticCaretaker);
-		this.employees.add(savannaCaretaker);
-		this.employees.add(forestCaretaker);
-		this.employees.add(arcticCaretaker);
-		this.employees.add(desertCaretaker);
 		
 		Environment aquaticEnv = new Aquatic(68, "blue", new ArrayList<Animal>());
 		aquaticEnv.addAnimal(new Dolphin("Jerry", 7, aquaticEnv, aquaticCaretaker));
@@ -71,7 +72,6 @@ public class Zoo {
 		tropicalEnv.addAnimal(new Monkey("Kea", 15, tropicalEnv, tropicalCaretaker));
 
 
-		return null;
 	}
 	
 
