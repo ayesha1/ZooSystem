@@ -12,39 +12,39 @@ public class Elephant extends Animal {
 	
 	
 	
-	@Override
-	public String feed() {
+	
+	public static String feed() {
 		
 		return "Employee feeds Elephant with fruits and bushes" ; 
 	}
 
-	@Override
-	public String clean() {
+	
+	public static String clean() {
 		return "Employee cleans water body for Elephant";
 	}
 
-	@Override
-	public String play() {
+	
+	public static String play() {
 		return "Visitors ride on Elephant back";
 	}
 
-	@Override
-	public String feedSnack() {
+	
+	public static String feedSnack() {
 		return "Visitors feed Elephant with fruits and bushes";
 	}
 
-	@Override
-	public String talk() {
+	
+	public static String talk() {
 		return "Elephant makes squeaking and roaring sounds" ;
 	}
 
-	@Override
-	public String move() {
+	
+	public static String move() {
 		return "Elephant moves in and out of the water";
 	}
 
-	@Override
-	public String eat() {
+	
+	public static String eat() {
 		return "Elephant eats furits and bushes";
 	}
 

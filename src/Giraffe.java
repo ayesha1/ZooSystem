@@ -13,38 +13,38 @@ public class Giraffe extends Animal {
 	
 	
 	
-	@Override
-	public String feed() {
+	
+	public static String feed() {
 		return "Employee feeds Giraffe with wild apricot and shrubs" ; 
 	}
 
-	@Override
-	public String clean() {
+	
+	public static String clean() {
 		return "Employee cuts weeds and cleans the ground for Giraffe" ;  
 	}
 
-	@Override
-	public String play() {
+	
+	public static String play() {
 		return "Visitor plays with Giraffe face";
 	}
 
-	@Override
-	public String feedSnack() {
+	
+	public static String feedSnack() {
 		return "Visitors feed twigs to Giraffe";
 	}
 
-	@Override
-	public String talk() {
+	
+	public static String talk() {
 		return "Giraffe makes flute like noises";
 	}
 
-	@Override
-	public String move() {
+	
+	public static String move() {
 		return "Giraffe moves and runs on the ground";
 	}
 
-	@Override
-	public String eat() {
+	
+	public static String eat() {
 		return "Giraffe eats twigs";
 	}
 

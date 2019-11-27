@@ -1,5 +1,5 @@
 
-public class Animal implements AnimalVisitorInteract, AnimalEmployeeInteract, AnimalActions {
+public class Animal implements AnimalActions {
 
 	private String name;
 	private int age;
@@ -51,44 +51,40 @@ public class Animal implements AnimalVisitorInteract, AnimalEmployeeInteract, An
 		this.caretaker = caretaker;
 	}
 
-	@Override
-	public String feed() {
+	public static String feed() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	@Override
-	public String clean() {
+	
+	
+	public static String clean() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	@Override
-	public String play() {
+	public static String play() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	@Override
-	public String feedSnack() {
+	public static String feedSnack() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	@Override
-	public String talk() {
+	public static String talk() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	@Override
-	public String move() {
+	public static String move() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	@Override
-	public String eat() {
+	
+	public static String eat() {
 		// TODO Auto-generated method stub
 		return null;
 	}

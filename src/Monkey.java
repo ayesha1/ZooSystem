@@ -13,44 +13,42 @@ public class Monkey extends Animal {
 	
 	
 	
-	@Override
-	public String feed() {
+	public static String feed() {
 		// TODO Auto-generated method stub
 		return "Employeee feeds Monkey with banana" ; 
 	}
 
-	@Override
-	public String clean() {
+	public static String clean() {
 		// TODO Auto-generated method stub
 		return "Employee cleans the cage for Monkey" ; 
 	}
 
-	@Override
-	public String play() {
+	
+	public static String play() {
 		// TODO Auto-generated method stub
 		return "Visitors play by teasing the caged Monkey" ; 
 	}
 
-	@Override
-	public String feedSnack() {
+	
+	public static String feedSnack() {
 		// TODO Auto-generated method stub
 		return "Visitors feed bananas to Monkey" ; 
 	}
 
-	@Override
-	public String talk() {
+	
+	public static String talk() {
 		// TODO Auto-generated method stub
 		return "Monkey chatter sounds" ; 
 	}
 
-	@Override
-	public String move() {
+	
+	public static String move() {
 		// TODO Auto-generated method stub
 		return "Monkey climbs and jumbs on the tress" ; 
 	}
 
-	@Override
-	public String eat() {
+	
+	public static String eat() {
 		// TODO Auto-generated method stub
 		return "Moneky eats bananas" ; 
 	}
