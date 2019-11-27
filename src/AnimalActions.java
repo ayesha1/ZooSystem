@@ -1,4 +1,9 @@
 
+/**
+ * 
+ * @author Osama
+ *
+ */
 public interface AnimalActions {
 
 
