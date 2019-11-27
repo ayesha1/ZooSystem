@@ -18,17 +18,28 @@ public class Zoo {
 	private ArrayList<Visitor> visitors;
 	public static int pay;
 	
+	
+	
+	/**
+	 * What Zoo is supposed to do is on creation of object, it generates all the things for the zoo. This includes generating
+	 * all the environments, all the animals, all the workers, and the owner. 
+	 * 
+	 * 
+	 */
 	public Zoo() {
 		// TODO Auto-generated constructor stub
 		
 		//this is our owner
 		this.owner = new Owner("Jimbob", "Jerry", "Jones", 0);
-		
+
+		employees = new ArrayList<Employee>();
+		visitors = new ArrayList<>();
+
 		generateZoo();
 		
 		//empty list. added upon when visitors fill out form
-		visitors = new ArrayList<>();
 	}
+	
 	
 	/**
 	 * Hard code a bunch of employees and return a list of them
@@ -44,13 +55,14 @@ public class Zoo {
 		Employee forestCaretaker = new Employee("Albert", "John", "Jones", 1234567, "Fulltime", 45000, "albjones@zoo.com", "123abc");
 		Employee savannaCaretaker = new Employee("Carlos", "", "Gilligan", 1234567, "Parttime", 25000, "carlos@zoo.com", "123abc");
 		Employee tropicalCaretaker = new Employee("Katie", "Carly", "Corbelt", 1234567, "Fulltime", 65000, "KatieCorblet@zoo.com", "123abc");
-
-		this.employees.add(tropicalCaretaker);
+		
 		this.employees.add(aquaticCaretaker);
-		this.employees.add(savannaCaretaker);
-		this.employees.add(forestCaretaker);
 		this.employees.add(arcticCaretaker);
 		this.employees.add(desertCaretaker);
+		this.employees.add(forestCaretaker);
+		this.employees.add(savannaCaretaker);
+		this.employees.add(tropicalCaretaker);
+
 		
 		Environment aquaticEnv = new Aquatic(68, "blue", new ArrayList<Animal>());
 		aquaticEnv.addAnimal(new Dolphin("Jerry", 7, aquaticEnv, aquaticCaretaker));

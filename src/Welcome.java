@@ -128,6 +128,9 @@ public class Welcome extends Application {
 			}
 		});
 		GridPane gridPane = new GridPane();
+		gridPane.setHgap(20);
+		gridPane.setVgap(20);
+
 		gridPane.setAlignment(Pos.CENTER);
 
 		gridPane.add(text1, 1, 0);
@@ -142,8 +145,6 @@ public class Welcome extends Application {
 		
 		gridPane.add(button1, 1, 3);
 		gridPane.add(button2, 0, 3);
-		gridPane.setHgap(20);
-		gridPane.setVgap(20);
 
 		gridPane.setStyle("-fx-padding: 10;" + "-fx-border-style: solid inside;" + "-fx-border-width: 2;"
 				+ "-fx-border-insets: 5;" + "-fx-border-radius: 5;" + "-fx-border-color: pink;"
