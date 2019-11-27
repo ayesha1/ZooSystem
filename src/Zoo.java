@@ -27,12 +27,14 @@ public class Zoo {
 	public Zoo() {
 		// TODO Auto-generated constructor stub
 		this.owner = new Owner("Jimbob", "Jerry", "Jones");
-		
+		employees = new ArrayList<Employee>();
+		visitors = new ArrayList<>();
+
 		generateZoo();
 		
 		//empty list. added upon when visitors fill out form
-		visitors = new ArrayList<>();
 	}
+	
 	
 	/**
 	 * Hard code a bunch of employees and return a list of them
@@ -48,6 +50,7 @@ public class Zoo {
 		Employee forestCaretaker = new Employee("Albert", "John", "Jones", 1234567, "Fulltime", 45000, "albjones@zoo.com", "123abc");
 		Employee savannaCaretaker = new Employee("Carlos", "", "Gilligan", 1234567, "Parttime", 25000, "carlos@zoo.com", "123abc");
 		Employee tropicalCaretaker = new Employee("Katie", "Carly", "Corbelt", 1234567, "Fulltime", 65000, "KatieCorblet@zoo.com", "123abc");
+		
 		this.employees.add(aquaticCaretaker);
 		this.employees.add(arcticCaretaker);
 		this.employees.add(desertCaretaker);
