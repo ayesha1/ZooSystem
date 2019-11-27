@@ -5,7 +5,7 @@ public class Sloth extends Animal {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Sloth(String name, int age, Environment environment, Caretaker caretaker) {
+	public Sloth(String name, int age, Environment environment, Employee caretaker) {
 		super(name, age, environment, caretaker);
 		// TODO Auto-generated constructor stub
 	}

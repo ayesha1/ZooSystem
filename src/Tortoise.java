@@ -5,7 +5,7 @@ public class Tortoise extends Animal {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Tortoise(String name, int age, Environment environment, Caretaker caretaker) {
+	public Tortoise(String name, int age, Environment environment, Employee caretaker) {
 		super(name, age, environment, caretaker);
 		// TODO Auto-generated constructor stub
 	}

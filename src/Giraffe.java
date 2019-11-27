@@ -5,7 +5,7 @@ public class Giraffe extends Animal {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Giraffe(String name, int age, Environment environment, Caretaker caretaker) {
+	public Giraffe(String name, int age, Environment environment, Employee caretaker) {
 		super(name, age, environment, caretaker);
 		// TODO Auto-generated constructor stub
 	}

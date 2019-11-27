@@ -4,13 +4,13 @@ public class Animal implements AnimalVisitorInteract, AnimalEmployeeInteract, An
 	private String name;
 	private int age;
 	private Environment environment;
-	private Caretaker caretaker;
+	private Employee caretaker;
 	
 	public Animal() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Animal(String name, int age, Environment environment, Caretaker caretaker) {
+	public Animal(String name, int age, Environment environment, Employee caretaker) {
 		super();
 		this.name = name;
 		this.age = age;
@@ -43,11 +43,11 @@ public class Animal implements AnimalVisitorInteract, AnimalEmployeeInteract, An
 		this.environment = environment;
 	}
 
-	public Caretaker getCaretaker() {
+	public Employee getCaretaker() {
 		return caretaker;
 	}
 
-	public void setCaretaker(Caretaker caretaker) {
+	public void setCaretaker(Employee caretaker) {
 		this.caretaker = caretaker;
 	}
 
