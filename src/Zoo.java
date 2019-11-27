@@ -4,6 +4,8 @@ import java.util.ListIterator;
 
 /**
  * Generates all the environments, all the employees, and all the animals.
+ * 
+ * An object of type zoo will be passed to all the pages. That is how you will calculate the money the zoo creates, by adding to the pay.
  * @author Osama
  *
  */

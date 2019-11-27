@@ -1,5 +1,9 @@
 
 /**
+ * These are all the static functions that each animal has
+ * 
+ * They are static because no matter what object of type Monkey, they all will have the same feed and eat messages.
+ * 
  * 
  * @author Osama
  *
