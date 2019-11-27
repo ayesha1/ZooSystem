@@ -19,9 +19,19 @@ public class Zoo {
 	 * Hard code a bunch of employees and return a list of them
 	 * @return
 	 */
-	private ArrayList<Employee> generateEmployees() {
-//		Caretaker a = new Caretaker();
+	private ArrayList<Employee> generateEmployees() { 
+		Employee acquaticCaretaker = new Employee();
 		return null;
+	}
+	private ArrayList<Environment> generateEnvironments() {
+		//generates environments with animals
+		
+		
+		
+		Environment aquatic = new Aquatic();
+	}
+	private ArrayList<Animal> generateAquaticAnimals(Environment acquatic, Employee acquaticCaretaker) {
+		Dolphin dolphin1 = new Dolphin("Jerry", 7, acquatic, acquaticCaretaker);
 	}
 	
 	public Owner getOwner() {
