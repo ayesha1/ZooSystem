@@ -34,7 +34,7 @@ public class slothPage extends Application {
 		// Buttons
 		// Feed a banana
 		Button button1 = new Button();
-		button1.setText("Feed a insect");
+		button1.setText("Feed an insect");
 		button1.setMaxHeight(200);
 		button1.setStyle("-fx-background-color: \n" + "        #090a0c,\n"
 				+ "        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),\n"
