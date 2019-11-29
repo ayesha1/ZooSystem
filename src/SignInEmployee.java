@@ -68,6 +68,17 @@ public class SignInEmployee extends Application {
 				+ "    -fx-font-size: 12px;\n" + "    -fx-padding: 10 20 10 20;");
 
 		button1.setOnAction(e -> {
+			// Hardcoded employee to pass into the Employee Details Page. Later will be taken from the ArrayList of Employees
+			Employee aquaticCaretaker = new Employee("James", "John", "Gilligan", 1234567, "Fulltime", 45000, "johngil@zoo.com", "123abc");
+			EmployeeDetails page = new EmployeeDetails(aquaticCaretaker);
+			try {
+				page.start(primaryStage);
+			} catch (Exception e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+
+			
 			String email = textField1.getText();
 			String password = textField2.getText();
 //			while (iterator.hasNext()) { 
