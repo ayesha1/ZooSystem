@@ -27,7 +27,7 @@ public class Panda extends Animal {
 	
 	public static String play() {
 		// TODO Auto-generated method stub
-		return "Visitor plays with banda by feeding him some fishes" ; 
+		return "Visitor plays hit the ball with panda" ; 
 	}
 
 	

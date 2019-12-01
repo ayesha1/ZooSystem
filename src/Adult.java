@@ -1,6 +1,7 @@
 
 public class Adult extends Visitor {
 
+	//the amt an adult must pay for a ticket
 	private int ticketAmt = 15;
 
 	public Adult(String firstName, String middleName, String lastName, int age, int ticketAmt) {

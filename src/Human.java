@@ -1,4 +1,8 @@
-
+/**
+ * Parent class of visitor, owner, and employee. 
+ * @author Osama
+ *
+ */
 public class Human {
 	//name
 	private String firstName, middleName, lastName;
