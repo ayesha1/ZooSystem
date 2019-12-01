@@ -11,7 +11,7 @@ import javafx.geometry.HPos;
 import javafx.geometry.Pos;
 
 
-public class snakePage extends Application {
+public class penguinPage extends Application {
 	
 	public static void main(String[] args) {
 		launch(args);
@@ -20,21 +20,21 @@ public class snakePage extends Application {
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 
-		primaryStage.setTitle("Snake");
+		primaryStage.setTitle("Penguin");
 
-		Text text1 = new Text("Select a way to interact with the snake");
+		Text text1 = new Text("Select a way to interact with the penguin");
 		text1.setStyle("-fx-font-size: 40;");
 		Text alert = new Text("");
 
-		Image snakeImage = new Image("/images/snake.png");
-		ImageView snakeView = new ImageView(snakeImage);
-		snakeView.setFitWidth(200);
-		snakeView.setFitHeight(200);
+		Image penguinImage = new Image("/images/penguin.png");
+		ImageView penguinView = new ImageView(penguinImage);
+		penguinView.setFitWidth(200);
+		penguinView.setFitHeight(200);
 		
 		// Buttons
 		// Feed a banana
 		Button button1 = new Button();
-		button1.setText("Feed a dead rodent");
+		button1.setText("Feed a Banana");
 		button1.setMaxHeight(200);
 		button1.setStyle("-fx-background-color: \n" + "        #090a0c,\n"
 				+ "        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),\n"
@@ -46,8 +46,7 @@ public class snakePage extends Application {
 				+ "    -fx-font-family: \"Arial\";\n" + "    -fx-text-fill: linear-gradient(white, #d0d0d0);\n"
 				+ "    -fx-font-size: 12px;\n" + "    -fx-padding: 10 20 10 20;");
 		button1.setOnAction(e -> {
-			String text = Snake.feedSnack();
-			alert.setText(text);
+			alert.setText(Penguin.feedSnack());
 			alert.setFill(javafx.scene.paint.Color.BLUE);
 
 		});
@@ -55,7 +54,7 @@ public class snakePage extends Application {
 		
 		// Play hide and seek
 		Button button2 = new Button();
-		button2.setText("Hang Snakes around your arms");
+		button2.setText("Play hide and Seek");
 		button2.setStyle("-fx-background-color: \n" + "        #090a0c,\n"
 				+ "        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),\n"
 				+ "        linear-gradient(#20262b, #191d22),\n"
@@ -66,7 +65,7 @@ public class snakePage extends Application {
 				+ "    -fx-font-family: \"Arial\";\n" + "    -fx-text-fill: linear-gradient(white, #d0d0d0);\n"
 				+ "    -fx-font-size: 12px;\n" + "    -fx-padding: 10 20 10 20;");
 		button2.setOnAction(e -> {
-			alert.setText(Snake.play());
+			alert.setText(Penguin.play());
 			alert.setFill(javafx.scene.paint.Color.BLUE);
 
 		});
@@ -100,7 +99,7 @@ public class snakePage extends Application {
 		gridPane.setAlignment(Pos.CENTER);
 
 		gridPane.add(text1, 1, 0);
-		gridPane.add(snakeView, 0, 1);
+		gridPane.add(penguinView, 0, 1);
 		gridPane.add(alert, 1, 1);
 
 		gridPane.add(button1, 1, 2);

@@ -18,6 +18,8 @@ import javafx.geometry.Pos;
 
 public class SignInEmployee extends Application {
 	public static Employee employeesignedIn; // global variable to see which employee is signed in
+	String[] emails;
+	String[] passwords;
 
 	public static void main(String[] args) {
 		launch(args);
@@ -25,8 +27,13 @@ public class SignInEmployee extends Application {
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-	  
-
+	 
+		for(int i = 0; i < ZooEntrancePage.zoo.getEmployees().size()-1; i++) {
+			System.out.print(ZooEntrancePage.zoo.getEmployees().get(i).email);
+			emails[i] = ZooEntrancePage.zoo.getEmployees().get(i).email;
+			System.out.print(ZooEntrancePage.zoo.getEmployees().get(i).password);
+			passwords[i] = ZooEntrancePage.zoo.getEmployees().get(i).password;
+		}
 		primaryStage.setTitle("Employee Sign In");
 		// creating label email
 		Text text1 = new Text("Email");
@@ -72,18 +79,23 @@ public class SignInEmployee extends Application {
 			
 			String email = textField1.getText();
 			String password = textField2.getText();
-//			while (iterator.hasNext()) { 
-//				Employee curr = iterator.next();
-//				if ((curr.email == email) && curr.password == password) {
-//					CheckoutPage login = new CheckoutPage(); // TODO: Change to employee info page.
-//					try {
-//						login.start(primaryStage);
-//					} catch (Exception e1) {
-//						// TODO Auto-generated catch block
-//						e1.printStackTrace();
-//					}
-//				}
-//			}
+			int index = 0;
+			for (String iEmail : emails) {
+				if (iEmail.equals(email)) {
+					String pass = passwords[index];
+					employeesignedIn = ZooEntrancePage.zoo.getEmployees().get(index);
+					if (pass.equals(password)) {
+						EmployeeDetails login = new EmployeeDetails(employeesignedIn);
+						try {
+							login.start(primaryStage);
+						} catch (Exception e1) {
+							// TODO Auto-generated catch block
+							e1.printStackTrace();
+						}
+					}
+				}
+				index++;
+			}
 			
 		});
 
