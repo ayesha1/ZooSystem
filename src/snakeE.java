@@ -10,7 +10,7 @@ import javafx.geometry.HPos;
 import javafx.geometry.Pos;
 
 
-public class monkeyE extends Application {
+public class snakeE extends Application {
 	
 	public static void main(String[] args) {
 		launch(args);
@@ -19,21 +19,21 @@ public class monkeyE extends Application {
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 
-		primaryStage.setTitle("Monkey");
+		primaryStage.setTitle("Snake");
 
 		Text text1 = new Text("What would you like to work on?");
 		text1.setStyle("-fx-font-size: 40;");
 		Text alert = new Text("");
 
-		Image monkeyImage = new Image("/images/monkey.png");
-		ImageView monkeyView = new ImageView(monkeyImage);
-		monkeyView.setFitWidth(200);
-		monkeyView.setFitHeight(200);
+		Image snakeImage = new Image("/images/snake.png");
+		ImageView snakeView = new ImageView(snakeImage);
+		snakeView.setFitWidth(200);
+		snakeView.setFitHeight(200);
 		
 		// Buttons
 		// Feed a banana
 		Button button1 = new Button();
-		button1.setText("Feed Monkey");
+		button1.setText("Feed Snake");
 		button1.setMaxHeight(200);
 		button1.setStyle("-fx-background-color: \n" + "        #090a0c,\n"
 				+ "        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),\n"
@@ -45,13 +45,13 @@ public class monkeyE extends Application {
 				+ "    -fx-font-family: \"Arial\";\n" + "    -fx-text-fill: linear-gradient(white, #d0d0d0);\n"
 				+ "    -fx-font-size: 12px;\n" + "    -fx-padding: 10 20 10 20;");
 		button1.setOnAction(e -> {
-			alert.setText(Monkey.feed());
+			alert.setText(Snake.feed());
 			alert.setFill(javafx.scene.paint.Color.BLUE);
 
 		});
 
 		
-		// Play hide and seek
+		
 		Button button2 = new Button();
 		button2.setText("Clean");
 		button2.setStyle("-fx-background-color: \n" + "        #090a0c,\n"
@@ -64,7 +64,7 @@ public class monkeyE extends Application {
 				+ "    -fx-font-family: \"Arial\";\n" + "    -fx-text-fill: linear-gradient(white, #d0d0d0);\n"
 				+ "    -fx-font-size: 12px;\n" + "    -fx-padding: 10 20 10 20;");
 		button2.setOnAction(e -> {
-			alert.setText(Monkey.clean());
+			alert.setText(Snake.clean());
 			alert.setFill(javafx.scene.paint.Color.BLUE);
 
 		});
@@ -98,7 +98,7 @@ public class monkeyE extends Application {
 		gridPane.setAlignment(Pos.CENTER);
 
 		gridPane.add(text1, 1, 0);
-		gridPane.add(monkeyView, 0, 1);
+		gridPane.add(snakeView, 0, 1);
 		gridPane.add(alert, 1, 1);
 
 		gridPane.add(button1, 1, 2);

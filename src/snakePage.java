@@ -54,7 +54,7 @@ public class snakePage extends Application {
 		
 		// Play hide and seek
 		Button button2 = new Button();
-		button2.setText("Play hide and Seek");
+		button2.setText("Hang Snakes around your arms");
 		button2.setStyle("-fx-background-color: \n" + "        #090a0c,\n"
 				+ "        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),\n"
 				+ "        linear-gradient(#20262b, #191d22),\n"
@@ -65,7 +65,7 @@ public class snakePage extends Application {
 				+ "    -fx-font-family: \"Arial\";\n" + "    -fx-text-fill: linear-gradient(white, #d0d0d0);\n"
 				+ "    -fx-font-size: 12px;\n" + "    -fx-padding: 10 20 10 20;");
 		button2.setOnAction(e -> {
-			alert.setText(Monkey.play());
+			alert.setText(Snake.play());
 			alert.setFill(javafx.scene.paint.Color.BLUE);
 
 		});
