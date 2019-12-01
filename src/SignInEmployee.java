@@ -68,6 +68,8 @@ public class SignInEmployee extends Application {
 				+ "    -fx-font-size: 12px;\n" + "    -fx-padding: 10 20 10 20;");
 
 		button1.setOnAction(e -> {
+			//TODO generate employee details
+			
 			String email = textField1.getText();
 			String password = textField2.getText();
 //			while (iterator.hasNext()) { 
