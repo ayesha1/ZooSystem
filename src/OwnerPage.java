@@ -24,6 +24,8 @@ public class OwnerPage extends Application {
 
 		Text text1 = new Text("Click on what the employee can do");
 		text1.setStyle("-fx-font-size: 40;");
+		Text alert = new Text("");
+
 		
 		// Give Pay
 		Button givePay = new Button();
@@ -42,6 +44,13 @@ public class OwnerPage extends Application {
 				"    -fx-font-size: 12px;\n" + 
 				"    -fx-padding: 10 20 10 20;");
 		givePay.setMaxHeight(20);
+		
+		givePay.setOnAction(e -> {
+			Zoo.pay = 0;
+			alert.setText("Employees were paid");
+			alert.setFill(javafx.scene.paint.Color.BLUE);
+		});
+
 		
 		
 		// Collect Pay from Visitors
@@ -71,12 +80,14 @@ public class OwnerPage extends Application {
 		// Makes pay = $0
 		collectPay.setOnAction(e -> {
 			Zoo.pay = 0;
+			alert.setText("Payment was collected from Visitors");
+			alert.setFill(javafx.scene.paint.Color.BLUE);
 		});
 
 		
 		// Hire employees
 		Button hireEmployees = new Button();
-		hireEmployees.setText("Collect $ from Visitors");
+		hireEmployees.setText("Hire new employees");
 		hireEmployees.setStyle("-fx-background-color: \n" + 
 				"        #090a0c,\n" + 
 				"        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),\n" + 
@@ -140,12 +151,12 @@ public class OwnerPage extends Application {
 		GridPane gridPane = new GridPane();
 		gridPane.setAlignment(Pos.CENTER);
 
-		gridPane.add(text1, 1, 0);
+		gridPane.add(text1, 0, 0);
 		gridPane.add(collectPay, 0, 1);
 		gridPane.add(payFromVisitors, 0, 2);
-		gridPane.add(givePay, 1, 1);
-		gridPane.add(hireEmployees, 1, 2);
-
+		gridPane.add(givePay, 0, 3);
+		gridPane.add(hireEmployees, 0, 4);
+		gridPane.add(alert, 1, 3);
 		gridPane.add(button, 2, 1);
 
 
