@@ -21,9 +21,6 @@ public class ZooEntrancePage extends Application {
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		
-		for(int i = 0; i < zoo.getEmployees().size(); i++) {
-			System.out.print(zoo.getEmployees().get(i).email);
-		}
 
 		primaryStage.setTitle("Welcome");
 
