@@ -46,8 +46,7 @@ public class snakePage extends Application {
 				+ "    -fx-font-family: \"Arial\";\n" + "    -fx-text-fill: linear-gradient(white, #d0d0d0);\n"
 				+ "    -fx-font-size: 12px;\n" + "    -fx-padding: 10 20 10 20;");
 		button1.setOnAction(e -> {
-			String text = Snake.feedSnack();
-			alert.setText(text);
+			alert.setText(Sanke.feedSnack());
 			alert.setFill(javafx.scene.paint.Color.BLUE);
 
 		});

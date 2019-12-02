@@ -127,6 +127,15 @@ public class OwnerPage extends Application {
 				"    -fx-font-size: 12px;\n" + 
 				"    -fx-padding: 10 20 10 20;");
 		button.setMaxHeight(20);
+		button.setOnAction(e -> {
+			Welcome login = new Welcome();
+			try {
+				login.start(primaryStage);
+			} catch (Exception e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+		});
 		
 		GridPane gridPane = new GridPane();
 		gridPane.setAlignment(Pos.CENTER);

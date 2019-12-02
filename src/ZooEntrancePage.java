@@ -1,5 +1,4 @@
 
-import java.util.ArrayList;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -9,12 +8,11 @@ import javafx.scene.image.ImageView;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.scene.layout.GridPane;
-import javafx.geometry.HPos;
 import javafx.geometry.Pos;
 
 
 public class ZooEntrancePage extends Application {
-	Zoo zoo = new Zoo();
+	static Zoo zoo = new Zoo();
 	
 	public static void main(String[] args) {
 		launch(args);
@@ -23,9 +21,9 @@ public class ZooEntrancePage extends Application {
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		
-//		for(int i = 0; i < zoo.getEmployees().size(); i++) {
-//			System.out.print(zoo.getEmployees().get(i).email);
-//		}
+		for(int i = 0; i < zoo.getEmployees().size(); i++) {
+			System.out.print(zoo.getEmployees().get(i).email);
+		}
 
 		primaryStage.setTitle("Welcome");
 
@@ -60,7 +58,6 @@ public class ZooEntrancePage extends Application {
 			try {
 				login.start(primaryStage);
 			} catch (Exception e1) {
-				// TODO Auto-generated catch block
 				e1.printStackTrace();
 			}
 		});
