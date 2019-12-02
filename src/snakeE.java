@@ -19,7 +19,7 @@ public class snakeE extends Application {
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 
-		primaryStage.setTitle("Snake");
+		primaryStage.setTitle("Employee: Snake");
 
 		Text text1 = new Text("What would you like to work on?");
 		text1.setStyle("-fx-font-size: 40;");
