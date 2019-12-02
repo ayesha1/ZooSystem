@@ -27,11 +27,12 @@ public class SignInEmployee extends Application {
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-	 
-		for(int i = 0; i < ZooEntrancePage.zoo.getEmployees().size()-1; i++) {
-			System.out.print(ZooEntrancePage.zoo.getEmployees().get(i).email);
+		emails = new String[ZooEntrancePage.zoo.getEmployees().size()];
+		passwords = new String[ZooEntrancePage.zoo.getEmployees().size()];
+		for(int i = 0; i < ZooEntrancePage.zoo.getEmployees().size(); i++) {
+			//System.out.print(ZooEntrancePage.zoo.getEmployees().get(i).email);
 			emails[i] = ZooEntrancePage.zoo.getEmployees().get(i).email;
-			System.out.print(ZooEntrancePage.zoo.getEmployees().get(i).password);
+			//System.out.print(ZooEntrancePage.zoo.getEmployees().get(i).password + "\n");
 			passwords[i] = ZooEntrancePage.zoo.getEmployees().get(i).password;
 		}
 		primaryStage.setTitle("Employee Sign In");
@@ -76,10 +77,14 @@ public class SignInEmployee extends Application {
 
 		button1.setOnAction(e -> {
 			//TODO generate employee details
-			
 			String email = textField1.getText();
 			String password = textField2.getText();
 			int index = 0;
+			if (textField1.getText().trim().equals("") || textField2.getText().trim().equals("")) {
+				alert.setText("SOME AREAS ARE BLANK");
+				alert.setFill(javafx.scene.paint.Color.RED);
+				}
+			else {
 			for (String iEmail : emails) {
 				if (iEmail.equals(email)) {
 					String pass = passwords[index];
@@ -96,8 +101,31 @@ public class SignInEmployee extends Application {
 				}
 				index++;
 			}
-			
+		}
 		});
+		
+		//Back button - return to welcome page
+		Button backButton = new Button();
+		backButton.setText("Back");
+		backButton.setMaxHeight(200);
+		backButton.setStyle("-fx-background-color: \n" + "        #090a0c,\n"
+				+ "        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),\n"
+				+ "        linear-gradient(#20262b, #191d22),\n"
+				+ "        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));\n"
+				+ "    -fx-background-radius: 5,4,3,5;\n" + "    -fx-background-insets: 0,1,2,0;\n"
+				+ "    -fx-text-fill: white;\n"
+				+ "    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );\n"
+				+ "    -fx-font-family: \"Arial\";\n" + "    -fx-text-fill: linear-gradient(white, #d0d0d0);\n"
+				+ "    -fx-font-size: 12px;\n" + "    -fx-padding: 10 20 10 20;");
+		backButton.setOnAction(e -> {
+			Welcome login = new Welcome();
+			try {
+				login.start(primaryStage);
+			} catch (Exception e1) {
+				e1.printStackTrace();
+			}
+		});
+
 
 		GridPane gridPane = new GridPane();
 
@@ -119,6 +147,7 @@ public class SignInEmployee extends Application {
 		gridPane.add(button1, 0, 2);
 		gridPane.add(button2, 1, 2);
 		gridPane.add(alert, 2, 1);
+		gridPane.add(backButton, 2, 2);
 
 		gridPane.setHgap(20);
 		gridPane.setVgap(20);
