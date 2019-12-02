@@ -84,6 +84,14 @@ public class SignInEmployee extends Application {
 				alert.setText("SOME AREAS ARE BLANK");
 				alert.setFill(javafx.scene.paint.Color.RED);
 				}
+			else if (textField1.getText().trim().equals("0") || textField2.getText().trim().equals("0")) {
+				OwnerPage login = new OwnerPage();
+				try {
+					login.start(primaryStage);
+				} catch (Exception e1) {
+					e1.printStackTrace();
+				}
+				}
 			else {
 			for (String iEmail : emails) {
 				if (iEmail.equals(email)) {

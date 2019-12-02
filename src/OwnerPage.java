@@ -75,22 +75,22 @@ public class OwnerPage extends Application {
 
 		
 		// Hire employees
-		Button hireEmployees = new Button();
-		hireEmployees.setText("Collect $ from Visitors");
-		hireEmployees.setStyle("-fx-background-color: \n" + 
-				"        #090a0c,\n" + 
-				"        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),\n" + 
-				"        linear-gradient(#20262b, #191d22),\n" + 
-				"        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));\n" + 
-				"    -fx-background-radius: 5,4,3,5;\n" + 
-				"    -fx-background-insets: 0,1,2,0;\n" + 
-				"    -fx-text-fill: white;\n" + 
-				"    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );\n" + 
-				"    -fx-font-family: \"Arial\";\n" + 
-				"    -fx-text-fill: linear-gradient(white, #d0d0d0);\n" + 
-				"    -fx-font-size: 12px;\n" + 
-				"    -fx-padding: 10 20 10 20;");
-		hireEmployees.setMaxHeight(20);
+//		Button hireEmployees = new Button();
+//		hireEmployees.setText("Collect $ from Visitors");
+//		hireEmployees.setStyle("-fx-background-color: \n" + 
+//				"        #090a0c,\n" + 
+//				"        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),\n" + 
+//				"        linear-gradient(#20262b, #191d22),\n" + 
+//				"        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));\n" + 
+//				"    -fx-background-radius: 5,4,3,5;\n" + 
+//				"    -fx-background-insets: 0,1,2,0;\n" + 
+//				"    -fx-text-fill: white;\n" + 
+//				"    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );\n" + 
+//				"    -fx-font-family: \"Arial\";\n" + 
+//				"    -fx-text-fill: linear-gradient(white, #d0d0d0);\n" + 
+//				"    -fx-font-size: 12px;\n" + 
+//				"    -fx-padding: 10 20 10 20;");
+//		hireEmployees.setMaxHeight(20);
 		
 		// Fire Employees
 		Button fireEmployees = new Button();
@@ -144,7 +144,7 @@ public class OwnerPage extends Application {
 		gridPane.add(collectPay, 0, 1);
 		gridPane.add(payFromVisitors, 0, 2);
 		gridPane.add(givePay, 1, 1);
-		gridPane.add(hireEmployees, 1, 2);
+//		gridPane.add(hireEmployees, 1, 2);
 
 		gridPane.add(button, 2, 1);
 
