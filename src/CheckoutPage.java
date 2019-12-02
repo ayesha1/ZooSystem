@@ -84,6 +84,16 @@ public class CheckoutPage extends Application {
 				+ "    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );\n"
 				+ "    -fx-font-family: \"Arial\";\n" + "    -fx-text-fill: linear-gradient(white, #d0d0d0);\n"
 				+ "    -fx-font-size: 12px;\n" + "    -fx-padding: 10 20 10 20;");
+		
+		button2.setOnAction(e -> {
+			Welcome login = new Welcome();
+			try {
+				login.start(primaryStage);
+			} catch (Exception e1) {
+				e1.printStackTrace();
+			}
+		});
+
 
 		button2.setStyle("-fx-background-color: \n" + "        #090a0c,\n"
 				+ "        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),\n"
