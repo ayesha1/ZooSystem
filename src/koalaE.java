@@ -19,7 +19,7 @@ public class koalaE extends Application {
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 
-		primaryStage.setTitle("Koala");
+		primaryStage.setTitle("Employee: Koala");
 
 		Text text1 = new Text("What would you like to work on?");
 		text1.setStyle("-fx-font-size: 40;");
