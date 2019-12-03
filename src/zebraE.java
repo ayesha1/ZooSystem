@@ -19,7 +19,7 @@ public class zebraE extends Application {
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 
-		primaryStage.setTitle("Zebra");
+		primaryStage.setTitle("Employee: Zebra");
 
 		Text text1 = new Text("What would you like to work on?");
 		text1.setStyle("-fx-font-size: 40;");

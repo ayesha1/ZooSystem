@@ -22,8 +22,13 @@ public class TropicalPage extends Application {
 
 		primaryStage.setTitle("Tropical");
 
-		Text text1 = new Text("Click on animal to interact with");
+		Text text1 = new Text("Click on");
+        Text text2 = new Text("animal to") ; 
+        Text text3 = new Text("interact") ; 
 		text1.setStyle("-fx-font-size: 40;");
+		text2.setStyle("-fx-font-size: 40;");
+		text3.setStyle("-fx-font-size: 40;");
+
 		
 		Image tropicalImage = new Image("/images/Tropical.png");
 		ImageView tropicalView = new ImageView(tropicalImage);
@@ -62,34 +67,88 @@ public class TropicalPage extends Application {
 			}
 		});
 		
-
 		
 		Image koalaImage = new Image("/images/koala.png");
 		ImageView koalaView = new ImageView(koalaImage);
 		koalaView.setFitWidth(200);
 		koalaView.setFitHeight(200);
 
+		Button button1 = new Button();
+		button1.setText("Koala");
+		button1.setMaxHeight(200);
+		button1.setStyle("-fx-background-color: \n" + 
+				"        #090a0c,\n" + 
+				"        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),\n" + 
+				"        linear-gradient(#20262b, #191d22),\n" + 
+				"        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));\n" + 
+				"    -fx-background-radius: 5,4,3,5;\n" + 
+				"    -fx-background-insets: 0,1,2,0;\n" + 
+				"    -fx-text-fill: white;\n" + 
+				"    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );\n" + 
+				"    -fx-font-family: \"Arial\";\n" + 
+				"    -fx-text-fill: linear-gradient(white, #d0d0d0);\n" + 
+				"    -fx-font-size: 12px;\n" + 
+				"    -fx-padding: 10 20 10 20;");
+		button1.setMaxHeight(20);
+		button1.setOnAction(e -> {
+			koalaPage login = new koalaPage();
+			try {
+				login.start(primaryStage);
+			} catch (Exception e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+		});
+
 		Image elephantImage = new Image("/images/elephant.png");
 		ImageView elephantView = new ImageView(elephantImage);
 		elephantView.setFitWidth(200);
 		elephantView.setFitHeight(200);
 		
+		Button button2 = new Button();
+		button2.setText("Elephant");
+		button2.setMaxHeight(200);
+		button2.setStyle("-fx-background-color: \n" + 
+				"        #090a0c,\n" + 
+				"        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),\n" + 
+				"        linear-gradient(#20262b, #191d22),\n" + 
+				"        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));\n" + 
+				"    -fx-background-radius: 5,4,3,5;\n" + 
+				"    -fx-background-insets: 0,1,2,0;\n" + 
+				"    -fx-text-fill: white;\n" + 
+				"    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );\n" + 
+				"    -fx-font-family: \"Arial\";\n" + 
+				"    -fx-text-fill: linear-gradient(white, #d0d0d0);\n" + 
+				"    -fx-font-size: 12px;\n" + 
+				"    -fx-padding: 10 20 10 20;");
+		button2.setMaxHeight(20);
+		button2.setOnAction(e -> {
+			ElephantPage login = new ElephantPage();
+			try {
+				login.start(primaryStage);
+			} catch (Exception e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+		});
 
 		GridPane gridPane = new GridPane();
 		gridPane.setAlignment(Pos.CENTER);
 
 		gridPane.add(text1, 1, 0);
-		gridPane.add(tropicalView, 0, 1);
-		gridPane.add(monkeyView, 1, 1);
-		gridPane.add(button, 1, 2);
+		gridPane.add(text2, 2, 0); 
+		gridPane.add(text3, 3, 0); 
+		gridPane.add(tropicalView, 0, 0);
+		gridPane.add(monkeyView, 0, 1);
+		gridPane.add(button, 0, 2);
+        gridPane.add(button1, 1, 2); 
+        gridPane.add(button2, 2, 2) ; 
+		gridPane.add(koalaView, 1, 1);
+		gridPane.add(elephantView, 2, 1);
 
-		gridPane.add(koalaView, 2, 1);
-
-		gridPane.add(elephantView, 0, 2);
-
-		gridPane.setHgap(20);
-		gridPane.setVgap(20);
-
+		gridPane.setHgap(85);
+		gridPane.setVgap(80);
+		
 		gridPane.setStyle("-fx-padding: 10;" + "-fx-border-style: solid inside;" + "-fx-border-width: 2;"
 				+ "-fx-border-insets: 5;" + "-fx-border-radius: 5;" + "-fx-border-color: pink;"
 				+ "-fx-background-color: white;");

@@ -12,6 +12,7 @@ import javafx.geometry.Pos;
 
 public class EmployeeDetails extends Application {
 	private Employee displayEmp;
+	
 	public EmployeeDetails(Employee emp) {
 		displayEmp = emp;
 	}
@@ -71,6 +72,10 @@ public class EmployeeDetails extends Application {
 		primaryStage.setScene(scene);
 		primaryStage.show();
 
+	}
+	
+	Employee getEmployee() {
+		return displayEmp;
 	}
 
 }

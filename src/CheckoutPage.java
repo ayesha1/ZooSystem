@@ -14,7 +14,7 @@ import javafx.geometry.Pos;
 
 public class CheckoutPage extends Application {
 	public static LinkedList<Visitor> listOfVisitors = new LinkedList<Visitor>();
-	
+
 	public static void main(String[] args) {
 		launch(args);
 	}
@@ -38,7 +38,7 @@ public class CheckoutPage extends Application {
 		// Creating Buttons
 		Button button1 = new Button("Submit");
 		Button button2 = new Button("Go Back");
-		
+
 		button1.setOnAction(e -> {
 			if (textField1.getText().trim().equals("") || textField2.getText().trim().equals("")) {
 				alert.setText("SOME AREAS ARE BLANK");
@@ -53,7 +53,7 @@ public class CheckoutPage extends Application {
 				Visitor newVisitor = new Visitor(name, Integer.parseInt(age));
 				CheckoutPage.listOfVisitors.add(newVisitor);
 				int age1 = Integer.parseInt(age);
-				
+
 				if (age1 > 0 || age1 < 18) {
 					Zoo.pay += 10;
 				} else if (age1 < 65 || age1 >= 18) {
@@ -61,7 +61,7 @@ public class CheckoutPage extends Application {
 				} if (age1 > 65) {
 					Zoo.pay += 9;
 				}
-	
+
 				ParkVisitationScreen login = new ParkVisitationScreen();
 				try {
 					login.start(primaryStage);
@@ -70,10 +70,10 @@ public class CheckoutPage extends Application {
 					e1.printStackTrace();
 				}
 				}
-			
-			
+
+
 		});
-		
+
 
 		button1.setStyle("-fx-background-color: \n" + "        #090a0c,\n"
 				+ "        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),\n"
@@ -84,7 +84,7 @@ public class CheckoutPage extends Application {
 				+ "    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );\n"
 				+ "    -fx-font-family: \"Arial\";\n" + "    -fx-text-fill: linear-gradient(white, #d0d0d0);\n"
 				+ "    -fx-font-size: 12px;\n" + "    -fx-padding: 10 20 10 20;");
-		
+
 		button2.setOnAction(e -> {
 			Welcome login = new Welcome();
 			try {

@@ -49,8 +49,15 @@ public class Zoo {
 	 * @return
 	 */
 	private void generateZoo() { 
+		
+		/**
+		 * Of course, this is not how you would actually store employee data. The correct way would be to utilize
+		 * a database and hash the passwords, each with a different salt. And then checking to see if your hashes match whenever the employees
+		 * attempt to log in. However, because we do not neeed to use a database for this project, we are using insecure employee objects.
+		 */
+		
 		Employee aquaticCaretaker = new Employee("James", "John", "Gilligan", 1234567, "Fulltime", 45000, "johngil@zoo.com", "123abc");
-		Employee arcticCaretaker = new Employee("Man", "Man", "Three", 1234567, "Fulltime", 45000, "manthree@zoo.com", "123abc");
+		Employee arcticCaretaker = new Employee("test", "test", "test", 1234567, "Fulltime", 45000, "test", "test");
 		Employee desertCaretaker = new Employee("Monica", "Stone", "Georgia", 1234567, "Fulltime", 55000, "monicageorge@zoo.com", "123abc");
 		Employee forestCaretaker = new Employee("Albert", "John", "Jones", 1234567, "Fulltime", 45000, "albjones@zoo.com", "123abc");
 		Employee savannaCaretaker = new Employee("Carlos", "", "Gilligan", 1234567, "Parttime", 25000, "carlos@zoo.com", "123abc");

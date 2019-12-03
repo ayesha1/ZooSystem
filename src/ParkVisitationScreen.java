@@ -128,9 +128,9 @@ public class ParkVisitationScreen extends Application {
 				"    -fx-padding: 10 20 10 20;");
 
 		button1.setOnAction(e -> {
-			CheckoutPage login = new CheckoutPage();
+			ForestPage forestPage = new ForestPage();
 			try {
-				login.start(primaryStage);
+				forestPage.start(primaryStage);
 			} catch (Exception e1) {
 				// TODO Auto-generated catch block
 				e1.printStackTrace();
@@ -139,7 +139,7 @@ public class ParkVisitationScreen extends Application {
 
 
 		button2 = new Button();
-		button2.setText("Savannah");
+		button2.setText("Savanna");
 		button2.setStyle("-fx-background-color: \n" + 
 				"        #090a0c,\n" + 
 				"        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),\n" + 
@@ -155,9 +155,9 @@ public class ParkVisitationScreen extends Application {
 				"    -fx-padding: 10 20 10 20;");
 
 		button2.setOnAction(e -> {
-			SignInEmployee login = new SignInEmployee();
+			SavannaPage savannaPage = new SavannaPage();
 			try {
-				login.start(primaryStage);
+				savannaPage.start(primaryStage);
 			} catch (Exception e1) {
 				// TODO Auto-generated catch block
 				e1.printStackTrace();
