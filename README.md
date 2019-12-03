@@ -84,13 +84,22 @@ Variation #2
 6.2 System displays that it has paid employees
 
 ## UML Diagrams
-<img src="https://i.imgur.com/HWLqAVM.png" width=700 hspace="20">
+<img src="https://i.imgur.com/kvfY8tH.png" width=700 hspace="20">
+
+### Sequence Diagrams
+<img src="https://i.imgur.com/675Whd0.png" width=700 hspace="20">
+<img src="https://i.imgur.com/qDPwDuW.png" width=700 hspace="20">
+<img src="https://i.imgur.com/GFf6ktT.png" width=700 hspace="20">
 
 ## Design Patterns Applied
-
 Iterator 
 - To iterate the list of Employees to get the Sign In
 - Check SignInEmployee.java to see how we loop through
+
+Strategy 
+- We have an interface AnimalActions.java
+- Utilizes static methods to implement the 'STRATEGY' pattern
+- Each animal object implements said interface and rewrites the methods
 
 MVC Model View Controller 
 - We separated the Model, View and the Controller
@@ -99,3 +108,7 @@ MVC Model View Controller
   - Controller handles the input from the user and manipulates the data and view to update.
 
 ## Components
+We have one file for all the implementation
+We have another file for images
+<img src="https://i.imgur.com/Dtmnid0.png" width=400 hspace="20">
+
