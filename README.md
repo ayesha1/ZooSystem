@@ -43,7 +43,7 @@ Variation #1<br>
 6 Visitor selects on an animal<br>
 7 Visitor is then lead to a page where it can interact with the animal<br>
 8 Visitor can go back to the environment page<br>
-9 Variation #1 <br>
+Variation #1 <br>
 2.1  In step 2,  Visitor enters nothing<br>
 2.2 The System will give an error on the screen<br>
 2.3 Displays, “Some areas are blank!” in red.<br>
@@ -62,7 +62,7 @@ Variation #2 <br>
 9 The employee selects an animal<br>
 10 The employee interacts with the animal<br>
 11 Then it goes back to the Zoo Welcome page<br>
-12 Variation #1 <br>
+Variation #1 <br>
 4.1 Employee enters wrong email or password<br>
 4.2 System does not let the employee in<br>
 
