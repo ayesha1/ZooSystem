@@ -80,6 +80,7 @@ public class OwnerPage extends Application {
 		// Makes pay = $0
 		collectPay.setOnAction(e -> {
 			Zoo.pay = 0;
+			payFromVisitors.setText("$0");
 			alert.setText("Payment was collected from Visitors");
 			alert.setFill(javafx.scene.paint.Color.BLUE);
 		});
