@@ -28,7 +28,7 @@ public class SavannaPage extends Application {
 		text2.setStyle("-fx-font-size: 40;");
 		text3.setStyle("-fx-font-size: 40;");
 		
-		Image savannaImage = new Image("/images/SavannaView.png");
+		Image savannaImage = new Image("/images/SavannahView.png");
 		ImageView savannaView = new ImageView(savannaImage);
 		savannaView.setFitWidth(200);
 		savannaView.setFitHeight(200);
