@@ -153,7 +153,6 @@ public class SignInEmployee extends Application {
 		gridPane.add(text2, 0, 1);
 		gridPane.add(textField2, 1, 1);
 		gridPane.add(button1, 0, 2);
-		gridPane.add(button2, 1, 2);
 		gridPane.add(alert, 2, 1);
 		gridPane.add(backButton, 2, 2);
 
