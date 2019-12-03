@@ -15,6 +15,9 @@ public class ParkVisitationScreen extends Application {
 	Button button;
 	Button button1;
 	Button button2;
+	Button button3;
+    Button button4;
+    Button button5;
 
 	public static void main(String[] args) {
 		launch(args);
@@ -24,9 +27,14 @@ public class ParkVisitationScreen extends Application {
 	public void start(Stage primaryStage) throws Exception {
 
 		primaryStage.setTitle("Park to visit");
-
-		Text text1 = new Text("Please select a park to visit!");
+Text text1 = new Text("Please");
+                Text t2 = new Text("select") ; 
+               t2.setStyle("-fx-font-size: 40;");
+        Text text2 = new Text("a park") ; 
+        Text text3 = new Text("to visit!"); 
 		text1.setStyle("-fx-font-size: 40;");
+        text2.setStyle("-fx-font-size: 40;");
+		text3.setStyle("-fx-font-size: 40;");
 		
 		Button exitButton = new Button("Back to Welcome Page");
 		exitButton.setStyle("-fx-background-color: \n" + 
@@ -128,7 +136,7 @@ public class ParkVisitationScreen extends Application {
 				"    -fx-padding: 10 20 10 20;");
 
 		button1.setOnAction(e -> {
-			CheckoutPage login = new CheckoutPage();
+			ForestPage login = new ForestPage();
 			try {
 				login.start(primaryStage);
 			} catch (Exception e1) {
@@ -155,7 +163,7 @@ public class ParkVisitationScreen extends Application {
 				"    -fx-padding: 10 20 10 20;");
 
 		button2.setOnAction(e -> {
-			SignInEmployee login = new SignInEmployee();
+			SavannahPage login = new SavannahPage();
 			try {
 				login.start(primaryStage);
 			} catch (Exception e1) {
@@ -163,10 +171,93 @@ public class ParkVisitationScreen extends Application {
 				e1.printStackTrace();
 			}
 		});
+
+		button3 = new Button();
+		button3.setText("Desert");
+		button3.setStyle("-fx-background-color: \n" + 
+				"        #090a0c,\n" + 
+				"        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),\n" + 
+				"        linear-gradient(#20262b, #191d22),\n" + 
+				"        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));\n" + 
+				"    -fx-background-radius: 5,4,3,5;\n" + 
+				"    -fx-background-insets: 0,1,2,0;\n" + 
+				"    -fx-text-fill: white;\n" + 
+				"    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );\n" + 
+				"    -fx-font-family: \"Arial\";\n" + 
+				"    -fx-text-fill: linear-gradient(white, #d0d0d0);\n" + 
+				"    -fx-font-size: 12px;\n" + 
+				"    -fx-padding: 10 20 10 20;");
+
+		button3.setOnAction(e -> {
+			DesertPage login = new DesertPage();
+			try {
+				login.start(primaryStage);
+			} catch (Exception e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+		});
+               
+                 button4 = new Button();
+		button4.setText("Arctic");
+		button4.setStyle("-fx-background-color: \n" + 
+				"        #090a0c,\n" + 
+				"        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),\n" + 
+				"        linear-gradient(#20262b, #191d22),\n" + 
+				"        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));\n" + 
+				"    -fx-background-radius: 5,4,3,5;\n" + 
+				"    -fx-background-insets: 0,1,2,0;\n" + 
+				"    -fx-text-fill: white;\n" + 
+				"    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );\n" + 
+				"    -fx-font-family: \"Arial\";\n" + 
+				"    -fx-text-fill: linear-gradient(white, #d0d0d0);\n" + 
+				"    -fx-font-size: 12px;\n" + 
+				"    -fx-padding: 10 20 10 20;");
+
+		button4.setOnAction(e -> {
+			arcticPage login = new arcticPage();
+			try {
+				login.start(primaryStage);
+			} catch (Exception e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+		});
+                
+                 button5 = new Button();
+		button5.setText("Aquatic");
+		button5.setStyle("-fx-background-color: \n" + 
+				"        #090a0c,\n" + 
+				"        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),\n" + 
+				"        linear-gradient(#20262b, #191d22),\n" + 
+				"        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));\n" + 
+				"    -fx-background-radius: 5,4,3,5;\n" + 
+				"    -fx-background-insets: 0,1,2,0;\n" + 
+				"    -fx-text-fill: white;\n" + 
+				"    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );\n" + 
+				"    -fx-font-family: \"Arial\";\n" + 
+				"    -fx-text-fill: linear-gradient(white, #d0d0d0);\n" + 
+				"    -fx-font-size: 12px;\n" + 
+				"    -fx-padding: 10 20 10 20;");
+
+		button5.setOnAction(e -> {
+			aquaticPage login = new aquaticPage();
+			try {
+				login.start(primaryStage);
+			} catch (Exception e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+		});
+
+
 		GridPane gridPane = new GridPane();
 		gridPane.setAlignment(Pos.CENTER);
 
 		gridPane.add(text1, 1, 0);
+		 gridPane.add(text2, 3, 0);
+                gridPane.add(text3, 4, 0);
+                    gridPane.add(t2, 2, 0); 
 		gridPane.add(exitButton, 0, 0);
 
 		gridPane.add(tropicalView, 0, 1);
@@ -176,6 +267,9 @@ public class ParkVisitationScreen extends Application {
 		gridPane.add(button, 0, 2);
 		gridPane.add(button1, 1, 2);
 		gridPane.add(button2, 2, 2);
+		   gridPane.add(button3,0, 4); 
+                gridPane.add(button4,1, 4);
+                gridPane.add(button5,2, 4); 
 
 		gridPane.add(dessertView, 0, 3);
 		gridPane.add(aquaticView, 1, 3);
