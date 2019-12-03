@@ -22,66 +22,65 @@ As per the textual description of the project, the actors in the use cases will 
 For Humans
 
 ### Log into the System 
-Human logs in the system
-
-The system displays welcome message with different options
-Owner, Visitor, and Employee
-Human selects the appropriate position/identity
-The system takes them (the human(s)) into appropriate pages
-Owner’s page, Visitor’s page, and Employees page 
-Variation #1
-1.1 In step 2, if Human does not make a selection 
-1.2 The system remains on the same page 
-1.3 Continue with step 2. 
+1 Human logs in the system<br>
+2 The system displays welcome message with different options<br>
+3 Owner, Visitor, and Employee<br>
+4 Human selects the appropriate position/identity<br>
+5 The system takes them (the human(s)) into appropriate pages<br>
+6 Owner’s page, Visitor’s page, and Employees page <br>
+Variation #1<br>
+1.1 In step 2, if Human does not make a selection <br>
+1.2 The system remains on the same page <br>
+1.3 Continue with step 2. <br>
 
 
 ### For Visitors
-Visits the Zoo
-Visitor Log into the system
-It enters name and age
-The system displays Park Visitation Screen which shows the 6 environments
-It clicks on one of the environment
-Visitor selects on an animal
-Visitor is then lead to a page where it can interact with the animal
-Visitor can go back to the environment page
-Variation #1 
-2.1  In step 2,  Visitor enters nothing
-2.2 The System will give an error on the screen
-2.3 Displays, “Some areas are blank!” in red.
-Variation #2 
-7.1 It can go back to the Welcome page where the options are shown
+1 Visits the Zoo<br>
+2 Visitor Log into the system<br>
+3 It enters name and age<br>
+4 The system displays Park Visitation Screen which shows the 6 environments<br>
+5 It clicks on one of the environment<br>
+6 Visitor selects on an animal<br>
+7 Visitor is then lead to a page where it can interact with the animal<br>
+8 Visitor can go back to the environment page<br>
+9 Variation #1 <br>
+2.1  In step 2,  Visitor enters nothing<br>
+2.2 The System will give an error on the screen<br>
+2.3 Displays, “Some areas are blank!” in red.<br>
+Variation #2 <br>
+7.1 It can go back to the Welcome page where the options are shown<br>
 
 ### For Employees
-Employee enters the zoo
-The System displays options, Visitor, Employee, Owner
-The Employee clicks on Employee button 
-System shows email and password textfield. 
-The Employee enters email and password
-System confirms email and passwords and leads the employee into Employee details page which shows the employees different attributes.
-The employee then decides to visit the Zoo Environments page
-The employee selects and environment
-The employee selects an animal
-The employee interacts with the animal
-Then it goes back to the Zoo Welcome page
-Variation #1 
-4.1 Employee enters wrong email or password
-4.2 System does not let the employee in
+1 Employee enters the zoo<br>
+2 The System displays options, Visitor, Employee, Owner<br>
+3 The Employee clicks on Employee button <br>
+4 System shows email and password textfield. <br>
+5 The Employee enters email and password<br>
+6 System confirms email and passwords and leads the employee into Employee details page which shows the employees different attributes.<br>
+7 The employee then decides to visit the Zoo Environments page<br>
+8 The employee selects and environment<br>
+9 The employee selects an animal<br>
+10 The employee interacts with the animal<br>
+11 Then it goes back to the Zoo Welcome page<br>
+12 Variation #1 <br>
+4.1 Employee enters wrong email or password<br>
+4.2 System does not let the employee in<br>
 
 ### For Owner
-Checks the System
-The owner enters the Zoo
-Zoo System displays three different options
-Owner clicks on Owner Option
-System displays email and password
-Enters “0” and “0” for both fields
-System displays owner options
-Owner can go back to Zoo welcome page
-Variation #1
-6.1 Owner selects collect pay from Visitors
-6.2 System displays “$0” and confirms that it has collected money
-Variation #2 
-6.1 Owner selects to pays employees
-6.2 System displays that it has paid employees
+1 Checks the System<br>
+2 The owner enters the Zoo<br>
+3 Zoo System displays three different options<br>
+4 Owner clicks on Owner Option<br>
+5 System displays email and password<br>
+6 Enters “0” and “0” for both fields<br>
+7 System displays owner options<br>
+8 Owner can go back to Zoo welcome page<br>
+Variation #1<br>
+6.1 Owner selects collect pay from Visitors<br>
+6.2 System displays “$0” and confirms that it has collected money<br>
+Variation #2 <br>
+6.1 Owner selects to pays employees<br>
+6.2 System displays that it has paid employees<br>
 
 ## UML Diagrams
 <img src="https://i.imgur.com/kvfY8tH.png" width=700 hspace="20">
