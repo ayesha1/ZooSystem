@@ -22,7 +22,7 @@ public class OwnerPage extends Application {
 
 		primaryStage.setTitle("Owner Options");
 
-		Text text1 = new Text("Click on what the employee can do");
+		Text text1 = new Text("Click on what the owner can do");
 		text1.setStyle("-fx-font-size: 40;");
 		Text alert = new Text("");
 
