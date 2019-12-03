@@ -23,6 +23,7 @@ For Humans
 
 ### Log into the System 
 Human logs in the system
+
 The system displays welcome message with different options
 Owner, Visitor, and Employee
 Human selects the appropriate position/identity
