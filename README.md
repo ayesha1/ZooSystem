@@ -84,7 +84,7 @@ Variation #2
 6.2 System displays that it has paid employees
 
 ## UML Diagrams
-<img src="https://i.imgur.com/2AuRjS6.png" width=700 hspace="20">
+<img src="https://i.imgur.com/HWLqAVM.png" width=700 hspace="20">
 
 ## Design Patterns Applied
 
