@@ -136,7 +136,7 @@ public class SavannaPage extends Application {
 		gridPane.add(text1, 1, 0);
 		gridPane.add(text2, 2, 0); 
 		gridPane.add(text3, 3, 0); 
-		gridPane.add(tropicalView, 0, 0);
+		gridPane.add(savannaView, 0, 0);
 		gridPane.add(giraffeView, 0, 1);
 		gridPane.add(button, 0, 2);
         gridPane.add(button1, 1, 2); 

@@ -56,7 +56,7 @@ public class aquaticPage extends Application {
 				"    -fx-padding: 10 20 10 20;");
 		button.setMaxHeight(20);
 		button.setOnAction(e -> {
-			dolphinPage login = new dolphinPage();
+			DolphinPage login = new DolphinPage();
 			try {
 				login.start(primaryStage);
 			} catch (Exception e1) {

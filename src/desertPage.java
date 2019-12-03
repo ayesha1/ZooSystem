@@ -57,7 +57,7 @@ public class desertPage extends Application {
 				"    -fx-padding: 10 20 10 20;");
 		button.setMaxHeight(20);
 		button.setOnAction(e -> {
-			camelPage login = new camelPage();
+			CamelPage login = new CamelPage();
 			try {
 				login.start(primaryStage);
 			} catch (Exception e1) {

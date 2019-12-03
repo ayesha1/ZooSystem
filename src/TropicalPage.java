@@ -123,7 +123,7 @@ public class TropicalPage extends Application {
 				"    -fx-padding: 10 20 10 20;");
 		button2.setMaxHeight(20);
 		button2.setOnAction(e -> {
-			elephantPage login = new elephantPage();
+			ElephantPage login = new ElephantPage();
 			try {
 				login.start(primaryStage);
 			} catch (Exception e1) {

@@ -32,7 +32,7 @@ public class arcticPage extends Application {
 		Image arcticImage = new Image("/images/ArticView.png");
 		ImageView arcticView = new ImageView(arcticImage);
 		arcticView.setFitWidth(200);
-		arcitcView.setFitHeight(200);
+		arcticView.setFitHeight(200);
 
 		Image penguinImage = new Image("/images/penguin.png");
 		ImageView penguinView = new ImageView(penguinImage);
