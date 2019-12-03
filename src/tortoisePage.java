@@ -26,7 +26,7 @@ public class tortoisePage extends Application {
 		text1.setStyle("-fx-font-size: 40;");
 		Text alert = new Text("");
 
-		Image tortoiseImage = new Image("/images/tortoise.png");
+		Image tortoiseImage = new Image("/images/turtle.png");
 		ImageView tortoiseView = new ImageView(tortoiseImage);
 		tortoiseView.setFitWidth(200);
 		tortoiseView.setFitHeight(200);

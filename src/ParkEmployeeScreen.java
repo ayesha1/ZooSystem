@@ -266,8 +266,8 @@ public class ParkEmployeeScreen extends Application {
 		gridPane.add(button1, 1, 2);
 		gridPane.add(button2, 2, 2);
 		gridPane.add(button3,0, 4); 
-        gridPane.add(button4,1, 4);
-        gridPane.add(button5,2, 4); 
+        gridPane.add(button4,2, 4);
+        gridPane.add(button5,1, 4); 
 
 		gridPane.add(dessertView, 0, 3);
 		gridPane.add(aquaticView, 1, 3);
