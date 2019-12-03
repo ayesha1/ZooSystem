@@ -87,8 +87,10 @@ Variation #2
 <img src="https://i.imgur.com/kvfY8tH.png" width=700 hspace="20">
 
 ### Sequence Diagrams
+### Visitor Sequence Diagram
 <img src="https://i.imgur.com/675Whd0.png" width=700 hspace="20">
 <img src="https://i.imgur.com/qDPwDuW.png" width=700 hspace="20">
+### Owner Sequence Diagram
 <img src="https://i.imgur.com/GFf6ktT.png" width=700 hspace="20">
 
 ## Design Patterns Applied
