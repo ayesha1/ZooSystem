@@ -84,7 +84,7 @@ public class lionE extends Application {
 				+ "    -fx-font-size: 12px;\n" + "    -fx-padding: 10 20 10 20;");
 		
 		button3.setOnAction(e -> {
-			ParkVisitationScreen login = new ParkVisitationScreen();
+			ParkEmployeeScreen login = new ParkEmployeeScreen();
 			try {
 				login.start(primaryStage);
 			} catch (Exception e1) {
