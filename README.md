@@ -16,5 +16,7 @@ This application is a Zoo Management System where you can enter the zoo as a vis
 
 ## Use Cases
 ## UML Diagrams
+<img src="https://i.imgur.com/2AuRjS6.png" width=700 hspace="20">
+
 ## Design Patterns Applied
 ## Components
