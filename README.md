@@ -1,7 +1,7 @@
 # Zoo System
 <div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 
-🐯A Zoo Management System lets you see different types of animals.
+🐯A Zoo Management System lets you see different types of animals. <br>
 Video Demo <a href="https://www.youtube.com/watch?v=SvF-fqdC41s">here</a>
 ## Table of Contents
 1. [Overview](#Overview)
